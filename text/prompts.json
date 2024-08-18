@@ -1,0 +1,1958 @@
+{
+  "attributes": [
+    {
+      "Item": "Carriageway",
+      "Col ID": "M",
+      "Attribute description": "Record a carriageway label for each section of road to distinguish which carriageway is being coded.\nUndivided vs. divided carriageways: Divided (dual) carriageways are surveyed in both directions, but undivided (single) carriageway roads are recorded in one direction only, even if the traffic is two-way. What is considered divided and undivided depends on the median type and its length:\n- Divided carriageways are those that physically separate opposing traffic flows by either a barrier or a wide physical median consistently and for a distance of 400m or more.\n- An undivided carriageway has no physical separation between opposing traffic flows, or physically separates traffic for a section of less than 400m.\n- One-way roads must be coded as undivided and the Median type set to one-way.\n- Service roads must be coded separately to the main carriageways. Code service roads the same way as standard roads.\n- If a bus or transit lane is part of the main carriageway, code it as part of the carriageway (see instructions on coding transit lanes under Number of lanes). Where there is a dedicated, separated carriageway for buses, these should be coded as divided or undivided carriageways separate to the main carriageway",
+      "categories": [
+        {
+          "Cat ID": 1,
+          "Category": "Carriageway A of a divided road",
+          "Category_description": "Divided carriageway in one direction."
+        },
+        {
+          "Cat ID": 2,
+          "Category": "Carriageway B of a divided road",
+          "Category_description": "Divided carriageway in opposite direction (to carriageway A)."
+        },
+        {
+          "Cat ID": 3,
+          "Category": "Undivided road",
+          "Category_description": "Undivided carriageway (in both directions or one-way)."
+        },
+        {
+          "Cat ID": 4,
+          "Category": "Carriageway A of a motorcycle facility",
+          "Category_description": "Segregated motorcycle paths adjacent to the main carriageway."
+        },
+        {
+          "Cat ID": 5,
+          "Category": "Carriageway B of a motorcycle facility",
+          "Category_description": "Segregated motorcycle paths adjacent to the main carriageway."
+        }
+      ]
+    },
+    {
+      "Item": "Upgrade cost",
+      "Col ID": "N",
+      "Attribute description": "Record the influence that the surrounding land-use, environment and topography will have on the cost of major works.\nUpgrade Cost is based on the relative cost of acquiring additional land and the associated complexity of working on that land. Upgrade cost may be designated as:\n-'High' where the cost of purchasing land or developing it would be relatively expensive.\n-'Medium' where the cost of purchasing land or developing it would be relatively moderate.\n-'Low' where the cost of purchasing land or developing it would be relatively low.",
+      "categories": [
+        {
+          "Cat ID": 3,
+          "Category": "High",
+          "Category_description": "The cost of road upgrades, such as adding a lane, would be relatively high. For example:\n- Major earthworks will be required.\n- Major service relocations expected.\n- Major property or adjacent developments affected, such as in urban areas."
+        },
+        {
+          "Cat ID": 2,
+          "Category": "Medium",
+          "Category_description": "The cost of road upgrades, such as adding a lane, would be relatively moderate. For example:\n- Moderate earthworks required.\n -Minor adjacent developments will be affected."
+        },
+        {
+          "Cat ID": 1,
+          "Category": "Low",
+          "Category_description": "The cost of road upgrades, such as adding a lane, would be relatively low. For example:\n- Minimal earthworks required.\n- No fringe development.."
+        }
+      ]
+    },
+    {
+      "Item": "Motorcycle observed flow",
+      "Col ID": "O",
+      "Attribute description": "Record the number of motorcycles observed within the coding segment. A motorcycle is a motorised two or three-wheeled vehicle. This typically includes mopeds, scooters and light three- and four-wheel vehicles capable of speeds over 30km/h. Motorcycles which are parked or not in use should not be recorded.",
+      "categories": [
+        {
+          "Cat ID": "6",
+          "Category": "8+ motorcycles"
+        },
+        {
+          "Cat ID": "5",
+          "Category": "6 to 7 motorcycles"
+        },
+        {
+          "Cat ID": "4",
+          "Category": "4 to 5 motorcycles"
+        },
+        {
+          "Cat ID": "3",
+          "Category": "2 to 3 motorcycles"
+        },
+        {
+          "Cat ID": "2",
+          "Category": "1 motorcycle"
+        },
+        {
+          "Cat ID": "1",
+          "Category": "_None_"
+        }
+      ]
+    },
+    {
+      "Item": "Bicycle observed flow",
+      "Col ID": "P",
+      "Attribute description": "Record the number of bicycles observed within the coding segment. A bicycle is a two- or three-wheeled pedal, pedal-assisted or mobility vehicle limited to speeds of less than 30km/h.",
+      "categories": [
+        {
+          "Cat ID": "6",
+          "Category": "8+ bicycles"
+        },
+        {
+          "Cat ID": "5",
+          "Category": "6 to 7 bicycles"
+        },
+        {
+          "Cat ID": "4",
+          "Category": "4 to 5 bicycles"
+        },
+        {
+          "Cat ID": "3",
+          "Category": "2 to 3 bicycles"
+        },
+        {
+          "Cat ID": "2",
+          "Category": "1 bicycle"
+        },
+        {
+          "Cat ID": "1",
+          "Category": "_None_"
+        }
+      ]
+    },
+    {
+      "Item": "Pedestrian observed flow across the road",
+      "Col ID": "Q",
+      "Attribute description": "Record the number of pedestrians across the road observed within the coding segment. Pedestrians include anyone on foot, operating a push/pull vehicle (street cleaner, pram or rickshaw) or in a wheelchair or other mobility vehicle. Do not count people involved in temporary road maintenance or construction.",
+      "categories": [
+        {
+          "Cat ID": "6",
+          "Category": "8+ pedestrians"
+        },
+        {
+          "Cat ID": "5",
+          "Category": "6 to 7 pedestrians"
+        },
+        {
+          "Cat ID": "4",
+          "Category": "4 to 5 pedestrians"
+        },
+        {
+          "Cat ID": "3",
+          "Category": "2 to 3 pedestrians"
+        },
+        {
+          "Cat ID": "2",
+          "Category": "1 pedestrian"
+        },
+        {
+          "Cat ID": "1",
+          "Category": "_None_"
+        }
+      ]
+    },
+    {
+      "Item": "Pedestrian observed flow along the road driver-side",
+      "Col ID": "R",
+      "Attribute description": "Record the number of pedestrians along the driver-side of the road observed within the coding segment. Pedestrians include anyone on foot, operating a push/pull vehicle (street cleaner, pram or rickshaw) or in a wheelchair or other mobility vehicle. Do not count people involved in temporary road maintenance or construction.",
+      "categories": [
+        {
+          "Cat ID": "6",
+          "Category": "8+ pedestrians"
+        },
+        {
+          "Cat ID": "5",
+          "Category": "6 to 7 pedestrians"
+        },
+        {
+          "Cat ID": "4",
+          "Category": "4 to 5 pedestrians"
+        },
+        {
+          "Cat ID": "3",
+          "Category": "2 to 3 pedestrians"
+        },
+        {
+          "Cat ID": "2",
+          "Category": "1 pedestrian"
+        },
+        {
+          "Cat ID": "1",
+          "Category": "_None_"
+        }
+      ]
+    },
+    {
+      "Item": "Pedestrian observed flow along the road passenger-side",
+      "Col ID": "S",
+      "Attribute description": "Record the number of pedestrians along the passenger-side of the road observed within the coding segment. Pedestrians include anyone on foot, operating a push/pull vehicle (street cleaner, pram or rickshaw) or in a wheelchair or other mobility vehicle. Do not count people involved in temporary road maintenance or construction.",
+      "categories": [
+        {
+          "Cat ID": "6",
+          "Category": "8+ pedestrians"
+        },
+        {
+          "Cat ID": "5",
+          "Category": "6 to 7 pedestrians"
+        },
+        {
+          "Cat ID": "4",
+          "Category": "4 to 5 pedestrians"
+        },
+        {
+          "Cat ID": "3",
+          "Category": "2 to 3 pedestrians"
+        },
+        {
+          "Cat ID": "2",
+          "Category": "1 pedestrian"
+        },
+        {
+          "Cat ID": "1",
+          "Category": "_None_"
+        }
+      ]
+    },
+    {
+      "Item": "Land use - driver-side",
+      "Col ID": "T",
+      "Attribute description": "Record the type of roadside development that is observed on the driver-side.\nOnly record land use types where there are clearly identifiable shorter lengths of high intensity activity, such as schools, short lengths of village environment, or localised market sites on rural roads.\nAny areas of obvious potential high intensity pedestrian activity should be coded as \u2018commercial\u2019 even if commercial activity is not immediately obvious.\nIf in doubt between two land use categories, select the one that appears first in the list of coding options.\nIf a road, such as a motorway overpass, cannot be accessed by pedestrians, code it as \u2018undeveloped areas\u2019. However, if pedestrians are present or are known to use the overpass, code it according to its surrounding land use. \n\n  If 1.<Attribute>: Carriageway is recorded as 'Carriageway A of a divided road', this attribute should be recorded as 'Undeveloped areas'.",
+      "categories": [
+        {
+          "Cat ID": 6,
+          "Category": "Educational",
+          "Category_description": "Schools, colleges, universities or other facilities that generate high pedestrian flows, such as hospitals or sporting arenas, are present."
+        },
+        {
+          "Cat ID": 4,
+          "Category": "Commercial",
+          "Category_description": "Shops or other commercial activity, parks and recreation spaces (such as sporting fields) or areas where high intensity pedestrian activity is evident. Include all types of shopping precincts."
+        },
+        {
+          "Cat ID": 7,
+          "Category": "Industrial and manufacturing",
+          "Category_description": "Industrial units, factories and/or manufacturing sites are present."
+        },
+        {
+          "Cat ID": 3,
+          "Category": "Residential",
+          "Category_description": "Residential housing area is present."
+        },
+        {
+          "Cat ID": 2,
+          "Category": "Farming and agricultural",
+          "Category_description": "Land used for farming or agricultural activities is present. Do not include open pasture with very low or no activity around it."
+        },
+        {
+          "Cat ID": 1,
+          "Category": "Undeveloped areas",
+          "Category_description": "Open land without shops, housing, industry or farming or where there is no land adjacent to the road.For example, bridges across water, elevated highways (without pedestrian access), overpasses and tunnels."
+        },
+        {
+          "Cat ID": 5,
+          "Category": "Not Recorded",
+          "Category_description": "Not Recorded"
+        }
+      ]
+    },
+    {
+      "Item": "Land use - passenger-side",
+      "Col ID": "U",
+      "Attribute description": "Record the type of roadside development that is observed on the driver-side.\nOnly record land use types where there are clearly identifiable shorter lengths of high intensity activity, such as schools, short lengths of village environment, or localised market sites on rural roads.\nAny areas of obvious potential high intensity pedestrian activity should be coded as \u2018commercial\u2019 even if commercial activity is not immediately obvious.\nIf in doubt between two land use categories, select the one that appears first in the list of coding options.\nIf a road, such as a motorway overpass, cannot be accessed by pedestrians, code it as \u2018undeveloped areas\u2019. However, if pedestrians are present or are known to use the overpass, code it according to its surrounding land use.",
+      "categories": [
+        {
+          "Cat ID": 6,
+          "Category": "Educational",
+          "Category_description": "Schools, colleges, universities or other facilities that generate high pedestrian flows, such as hospitals or sporting arenas, are present."
+        },
+        {
+          "Cat ID": 4,
+          "Category": "Commercial",
+          "Category_description": "Shops or other commercial activity, parks and recreation spaces (such as sporting fields) or areas where high intensity pedestrian activity is evident. Include all types of shopping precincts."
+        },
+        {
+          "Cat ID": 7,
+          "Category": "Industrial and manufacturing",
+          "Category_description": "Industrial units, factories and/or manufacturing sites are present."
+        },
+        {
+          "Cat ID": 3,
+          "Category": "Residential",
+          "Category_description": "Residential housing area is present."
+        },
+        {
+          "Cat ID": 2,
+          "Category": "Farming and agricultural",
+          "Category_description": "Land used for farming or agricultural activities is present. Do not include open pasture with very low or no activity around it."
+        },
+        {
+          "Cat ID": 1,
+          "Category": "Undeveloped areas",
+          "Category_description": "Open land without shops, housing, industry or farming or where there is no land adjacent to the road.For example, bridges across water, elevated highways (without pedestrian access), overpasses and tunnels."
+        },
+        {
+          "Cat ID": 5,
+          "Category": "Not Recorded",
+          "Category_description": "Not Recorded"
+        }
+      ]
+    },
+    {
+      "Item": "Area type",
+      "Col ID": "V",
+      "Attribute description": "Record the type of area surrounding the road. Area type is coded as being either \u2018urban\u2019 or \u2018rural\u2019 depending on the level surrounding development. Town limit signs may be used as a guide.",
+      "categories": [
+        {
+          "Cat ID": 2,
+          "Category": "Urban",
+          "Category_description": "Development spanning at least 400 metres along the road. Small, isolated settlements of less than 400m may be coded as changes to land use where they are sites of high intensity activity, such as schools, short lengths of village environment, or localised market sites."
+        },
+        {
+          "Cat ID": 1,
+          "Category": "Rural",
+          "Category_description": "Area outside of an urban area or rural town or village, or where roadside development does not impact the road or where it is separated by a large fence or wall."
+        }
+      ]
+    },
+    {
+      "Item": "Speed limit",
+      "Col ID": "W",
+      "Attribute description": "Record the actual posted numerical speed limit for general traffic. If no speed limit is posted, or there is a state/national limit sign, the default speed limit set by law for that type of road should be used. Do not record temporary speed limits at road works or school zones. Do not record advisory speeds.",
+      "categories": [
+        {
+          "Cat ID": 25,
+          "Category": "\u2265150km/h",
+          "Category_description": ""
+        },
+        {
+          "Cat ID": 23,
+          "Category": "140km/h",
+          "Category_description": ""
+        },
+        {
+          "Cat ID": 21,
+          "Category": "130km/h",
+          "Category_description": ""
+        },
+        {
+          "Cat ID": 19,
+          "Category": "120km/h",
+          "Category_description": ""
+        },
+        {
+          "Cat ID": 17,
+          "Category": "110km/h",
+          "Category_description": ""
+        },
+        {
+          "Cat ID": 15,
+          "Category": "100km/h",
+          "Category_description": ""
+        },
+        {
+          "Cat ID": 13,
+          "Category": "90km/h",
+          "Category_description": ""
+        },
+        {
+          "Cat ID": 11,
+          "Category": "80km/h",
+          "Category_description": ""
+        },
+        {
+          "Cat ID": 9,
+          "Category": "70km/h",
+          "Category_description": ""
+        },
+        {
+          "Cat ID": 7,
+          "Category": "60km/h",
+          "Category_description": ""
+        },
+        {
+          "Cat ID": 5,
+          "Category": "50km/h",
+          "Category_description": ""
+        },
+        {
+          "Cat ID": 3,
+          "Category": "40km/h",
+          "Category_description": ""
+        },
+        {
+          "Cat ID": 1,
+          "Category": "<30km/h",
+          "Category_description": ""
+        },
+        {
+          "Cat ID": 45,
+          "Category": "\u226590mph",
+          "Category_description": ""
+        },
+        {
+          "Cat ID": 43,
+          "Category": "80mph",
+          "Category_description": ""
+        },
+        {
+          "Cat ID": 41,
+          "Category": "70mph",
+          "Category_description": ""
+        },
+        {
+          "Cat ID": 39,
+          "Category": "60mph",
+          "Category_description": ""
+        },
+        {
+          "Cat ID": 37,
+          "Category": "50mph",
+          "Category_description": ""
+        },
+        {
+          "Cat ID": 35,
+          "Category": "40mph",
+          "Category_description": ""
+        },
+        {
+          "Cat ID": 33,
+          "Category": "30mph",
+          "Category_description": ""
+        },
+        {
+          "Cat ID": 31,
+          "Category": "<20mph",
+          "Category_description": ""
+        }
+      ]
+    },
+    {
+      "Item": "Motorcycle speed limit",
+      "Col ID": "X",
+      "Attribute description": "Record the actual posted numerical speed limit for motorcycle. If no speed limit is posted, or there is a state/national limit sign, the default speed limit set by law for that type of road should be used. Do not record temporary speed limits at road works or school zones. Do not record advisory speeds.",
+      "categories": [
+        {
+          "Cat ID": 25,
+          "Category": "\u2265150km/h",
+          "Category_description": ""
+        },
+        {
+          "Cat ID": 23,
+          "Category": "140km/h",
+          "Category_description": ""
+        },
+        {
+          "Cat ID": 21,
+          "Category": "130km/h",
+          "Category_description": ""
+        },
+        {
+          "Cat ID": 19,
+          "Category": "120km/h",
+          "Category_description": ""
+        },
+        {
+          "Cat ID": 17,
+          "Category": "110km/h",
+          "Category_description": ""
+        },
+        {
+          "Cat ID": 15,
+          "Category": "100km/h",
+          "Category_description": ""
+        },
+        {
+          "Cat ID": 13,
+          "Category": "90km/h",
+          "Category_description": ""
+        },
+        {
+          "Cat ID": 11,
+          "Category": "80km/h",
+          "Category_description": ""
+        },
+        {
+          "Cat ID": 9,
+          "Category": "70km/h",
+          "Category_description": ""
+        },
+        {
+          "Cat ID": 7,
+          "Category": "60km/h",
+          "Category_description": ""
+        },
+        {
+          "Cat ID": 5,
+          "Category": "50km/h",
+          "Category_description": ""
+        },
+        {
+          "Cat ID": 3,
+          "Category": "40km/h",
+          "Category_description": ""
+        },
+        {
+          "Cat ID": 1,
+          "Category": "<30km/h",
+          "Category_description": ""
+        },
+        {
+          "Cat ID": 45,
+          "Category": "\u226590mph",
+          "Category_description": ""
+        },
+        {
+          "Cat ID": 43,
+          "Category": "80mph",
+          "Category_description": ""
+        },
+        {
+          "Cat ID": 41,
+          "Category": "70mph",
+          "Category_description": ""
+        },
+        {
+          "Cat ID": 39,
+          "Category": "60mph",
+          "Category_description": ""
+        },
+        {
+          "Cat ID": 37,
+          "Category": "50mph",
+          "Category_description": ""
+        },
+        {
+          "Cat ID": 35,
+          "Category": "40mph",
+          "Category_description": ""
+        },
+        {
+          "Cat ID": 33,
+          "Category": "30mph",
+          "Category_description": ""
+        },
+        {
+          "Cat ID": 31,
+          "Category": "<20mph",
+          "Category_description": ""
+        }
+      ]
+    },
+    {
+      "Item": "Truck speed limit",
+      "Col ID": "Y",
+      "Attribute description": "Record the actual posted numerical speed limit for truck. If no speed limit is posted, or there is a state/national limit sign, the default speed limit set by law for that type of road should be used. Do not record temporary speed limits at road works or school zones. Do not record advisory speeds.",
+      "categories": [
+        {
+          "Cat ID": 25,
+          "Category": "\u2265150km/h",
+          "Category_description": ""
+        },
+        {
+          "Cat ID": 23,
+          "Category": "140km/h",
+          "Category_description": ""
+        },
+        {
+          "Cat ID": 21,
+          "Category": "130km/h",
+          "Category_description": ""
+        },
+        {
+          "Cat ID": 19,
+          "Category": "120km/h",
+          "Category_description": ""
+        },
+        {
+          "Cat ID": 17,
+          "Category": "110km/h",
+          "Category_description": ""
+        },
+        {
+          "Cat ID": 15,
+          "Category": "100km/h",
+          "Category_description": ""
+        },
+        {
+          "Cat ID": 13,
+          "Category": "90km/h",
+          "Category_description": ""
+        },
+        {
+          "Cat ID": 11,
+          "Category": "80km/h",
+          "Category_description": ""
+        },
+        {
+          "Cat ID": 9,
+          "Category": "70km/h",
+          "Category_description": ""
+        },
+        {
+          "Cat ID": 7,
+          "Category": "60km/h",
+          "Category_description": ""
+        },
+        {
+          "Cat ID": 5,
+          "Category": "50km/h",
+          "Category_description": ""
+        },
+        {
+          "Cat ID": 3,
+          "Category": "40km/h",
+          "Category_description": ""
+        },
+        {
+          "Cat ID": 1,
+          "Category": "<30km/h",
+          "Category_description": ""
+        },
+        {
+          "Cat ID": 45,
+          "Category": "\u226590mph",
+          "Category_description": ""
+        },
+        {
+          "Cat ID": 43,
+          "Category": "80mph",
+          "Category_description": ""
+        },
+        {
+          "Cat ID": 41,
+          "Category": "70mph",
+          "Category_description": ""
+        },
+        {
+          "Cat ID": 39,
+          "Category": "60mph",
+          "Category_description": ""
+        },
+        {
+          "Cat ID": 37,
+          "Category": "50mph",
+          "Category_description": ""
+        },
+        {
+          "Cat ID": 35,
+          "Category": "40mph",
+          "Category_description": ""
+        },
+        {
+          "Cat ID": 33,
+          "Category": "30mph",
+          "Category_description": ""
+        },
+        {
+          "Cat ID": 31,
+          "Category": "<20mph",
+          "Category_description": ""
+        }
+      ]
+    },
+    {
+      "Item": "Differential speed limits",
+      "Col ID": "Z",
+      "Attribute description": "Record if the difference in speed (operating or speed limit) between the posted speed limits for general traffic (<Attribute>: Speed limit), motorcycles (<Attribute>: Motorcycle speed limit), and trucks (<Attribute>: Truck speed limit) exceeds 20km/h or 12mph. The calculation should be based on the <Category class> values selected for the related speed limit attributes.\n\nTask:\nStep 1: Retrieve the selected <Category class> values for the <Attribute>: Speed limit, <Attribute>: Motorcycle speed limit, and <Attribute>: Truck speed limit.\nStep 2: Calculate the difference in speed between each pair (Speed limit vs. Motorcycle speed limit, Speed limit vs. Truck speed limit).\nStep 3: Determine if any of these differences exceed 20km/h or 12mph.\nStep 4: If any difference exceeds 20km/h or 12mph, return the <Category class>: Present. If all differences are 20km/h or 12mph or less, return <Category class>: Not present.\n\nExample Calculation: If <Attribute>: Speed limit is 140km/h and <Attribute>: Motorcycle speed limit is 80km/h, the difference is 60km/h. Since this is greater than 20km/h, the <Category class>: Present should be selected.",
+      "categories": [
+        {
+          "Cat ID": 2,
+          "Category": "Present",
+          "Category_description": "Difference in operating speed or speed limit is greater than 20km/h or 12mph."
+        },
+        {
+          "Cat ID": 1,
+          "Category": "Not present",
+          "Category_description": "Difference in operating speed or speed limit is equal to or less than 20km/h or 12mph."
+        }
+      ]
+    },
+    {
+      "Item": "Median type",
+      "Col ID": "AA",
+      "Attribute description": "Record the road infrastructure feature that separates the two opposing traffic flows for both divided and undivided carriageways.\n- Note: Median fencing used to control traffic and pedestrian movement, but that would not withstand vehicle impact, should be recorded as 'Flexible posts'.\n- Undivided Roads: If the road is undivided, has two directions of travel, and has no markings, it should be recorded as 'Median type = Centre line only' and 'Delineation = Poor'.",
+      "categories": [
+        {
+          "Cat ID": 11,
+          "Category": "Centre line",
+          "Category_description": "Undivided two-way road only. Single or double central line or marked central strip that is less than 0.3m wide. The centre line can be either dashed or solid, and of any colour."
+        },
+        {
+          "Cat ID": 14,
+          "Category": "Wide centre line 0.3m to 1m",
+          "Category_description": "Undivided two-way road only. Single or double centre line, or marked central strip 0.3m to 1m wide. The wide centre line may be dashed, solid or ladder hatching, and of any colour."
+        },
+        {
+          "Cat ID": 10,
+          "Category": "Central hatching >1m",
+          "Category_description": "Undivided two-way road only. Marked central strip greater than 1m wide. Examples of marking are ladder hatching, stripes or coloured paving."
+        },
+        {
+          "Cat ID": 8,
+          "Category": "Continuous central turning lane",
+          "Category_description": "Undivided two-way road only. Continuous central lane designated as a turning lane."
+        },
+        {
+          "Cat ID": 9,
+          "Category": "Flexible posts",
+          "Category_description": "Undivided two-way road only. Flexible posts or bollards, but that are not a continuous physical divider. May include median fences installed for the purposes of controlling traffic and pedestrian movements, but which would not withstand vehicle impact."
+        },
+        {
+          "Cat ID": 7,
+          "Category": "Physical median width 0 to <1m",
+          "Category_description": "Divided road only. Defined median of different material less than 1m wide. A physical median typically includes a curb or other surface change that would slow an out-of-control vehicle."
+        },
+        {
+          "Cat ID": 6,
+          "Category": "Physical median width 1 to <5m",
+          "Category_description": "Divided road only. Defined median of different material 1m to <5m wide. A physical median typically includes a curb or other surface change that would slow an out-of-control vehicle."
+        },
+        {
+          "Cat ID": 5,
+          "Category": "Physical median width 5 to <10m",
+          "Category_description": "Divided road only. Defined median of different material 5m to <10m wide. A physical median typically includes a curb or other surface change that would slow an out-of-control vehicle."
+        },
+        {
+          "Cat ID": 2,
+          "Category": "Safety barrier - concrete",
+          "Category_description": "Divided road only. Safety barrier constructed from concrete that meets international standards. Do not record defective safety barriers."
+        },
+        {
+          "Cat ID": 1,
+          "Category": "Safety barrier - metal",
+          "Category_description": "Divided road only. Metal safety barrier that meets international standards. Do not record defective safety barriers."
+        },
+        {
+          "Cat ID": 12,
+          "Category": "Safety barrier - motorcycle friendly",
+          "Category_description": "Divided road only. Safety barrier designed to minimise impact to motorcyclists that meets international standards. Motorcycle friendly barriers will have some form of protection for the supporting post or legs."
+        },
+        {
+          "Cat ID": 15,
+          "Category": "Safety barrier - wire rope",
+          "Category_description": "Divided road only. Safety barrier constructed from tensioned wires that meets international standards.Do not record defective safety barriers."
+        },
+        {
+          "Cat ID": 4,
+          "Category": "Physical median width 10 to <20m",
+          "Category_description": "Divided road only. Defined median of different material 10m to less than 20m wide. A physical median typically includes a curb or other surface change that would slow an out-of-control vehicle."
+        },
+        {
+          "Cat ID": 3,
+          "Category": "Physical median width \u226520m",
+          "Category_description": "Divided road only. Defined median of different material 20m wide or more. A physical median typically includes a curb or other surface change that would slow an out-of-control vehicle."
+        },
+        {
+          "Cat ID": 13,
+          "Category": "One way",
+          "Category_description": "One-way road only. Vehicles travel in a single direction with no opposing flow."
+        }
+      ]
+    },
+    {
+      "Item": "Centreline rumble strips",
+      "Col ID": "AB",
+      "Attribute description": "Record any textured markings along the centre of an undivided road which function to warn drivers crossing the median.\nCentreline rumble strips should be coded only for undivided roads where there structured or milled markings as part of the road marking median. Only record centre line rumble strips where they are present for the whole coding segment, except where an intersection is present. Do not record shoulder rumble strips here.\nCentre line rumble strips are also known as raised profile markings. This feature provides an audio-vibratory warning to the driver. They may be a solid line or placed intermittently (similar to a dashed line). Rumble strips may be either grooves cut into the pavement surface or raised ribs added to the road marking. Raised markers that are spaced between 10-20 cm and serve a similar purpose may also be recorded.\nCentre line rumble strips should only be recorded where delineation is present.",
+      "categories": [
+        {
+          "Cat ID": 1,
+          "Category": "Not present",
+          "Category_description": "Rumble strip is not present in the centre of the road."
+        },
+        {
+          "Cat ID": 2,
+          "Category": "Present",
+          "Category_description": "Rumble strip is present in the centre of the road."
+        }
+      ]
+    },
+    {
+      "Item": "Roadside severity - driver-side distance",
+      "Col ID": "AC",
+      "Attribute description": "Examine the roadside environment on the driver-side of the image to identify hazardous objects that pose a risk to vehicles. Follow these steps:\n1.Identify Hazardous Objects: Look for any objects on the driver-side that could be dangerous to vehicles, such as barriers, trees, poles, structures, or slopes.\n2. Measure Distance: Estimate the distance from the edge line of the nearest driving lane to the identified hazardous object(s).\n3.Classify Hazards: Categorize the identified hazards using the provided risk hierarchy, with #1 being the highest risk:\n#1 Any - Cliff\n#2 0 to <1m - Tree \u226510cm\n#3 0 to <1m - Rigid sign, post or pole \u226510cm\n#4 0 to <1m - Rigid structure or building\n#5 0 to <1m - Unprotected safety barrier end\n#6 0 to <1m - Low rigid object \u226520cm high\n#7 0 to <1m - Aggressive vertical face\n#8 0 to <1m - Deep drainage ditch\n#9 1 to <5m - Tree \u226510cm\n#10 1 to <5m - Rigid sign, post or pole \u226510cm\n#11 1 to <5m - Rigid structure or building\n#12 1 to <5m - Unprotected safety barrier end\n#13 1 to <5m - Low rigid object \u226520cm high\n#14 0 to <1m - Upwards slope - roll over\n#15 0 to <1m - Downwards slope\n#16 1 to <5m - Aggressive vertical face\n#17 1 to <5m - Deep drainage ditch\n#18 0 to <1m - Upwards slope - no roll over\n#19 0 to <1m - Upwards slope - roll over\n#20 1 to <5m - Downwards slope\n#21 0 to <1m - Upwards slope - no roll over\n#22 0 to <1m - Semi-rigid structure or building\n#23 1 to <5m - Semi-rigid structure or building\n#24 5 to <10m - Tree \u226510cm\n#25 5 to <10m - Rigid sign, post or pole \u226510cm\n#26 5 to <10m - Rigid structure or building\n#27 5 to <10m - Unprotected safety barrier end\n#28 5 to <10m - Low rigid object \u226520cm high\n#29 5 to <10m - Aggressive vertical face\n#30 5 to <10m - Upwards slope - roll over\n#31 5 to <10m - Deep drainage ditch\n#32 5 to <10m - Downwards slope\n#33 5 to <10m - Safety barrier - concrete\n#34 5 to <10m - Upwards slope - no roll over\n#35 0 to <1m - Safety barrier - metal\n#36 0 to <1m - Safety barrier - motorcycle friendly\n#37 1 to <5m - Safety barrier - concrete\n#38 1 to <5m - Semi-rigid structure or building\n#39 1 to <5m - Safety barrier - metal\n#40 1 to <5m - Safety barrier - motorcycle friendly\n#41 1 to <5m - Safety barrier - wire rope\n#42 1 to <5m - Safety barrier - wire rope\n#43 \u226510m - Tree \u226510cm\n#44 \u226510m - Rigid sign, post or pole \u226510cm\n#45 \u226510m - Rigid structure or building\n#46 \u226510m - Unprotected safety barrier end\n#47 \u226510m - Low rigid object \u226520cm high\n#48 \u226510m - Aggressive vertical face\n#49 \u226510m - Deep drainage ditch\n#50 5 to <10m - Safety barrier - concrete\n#51 \u226510m - Upwards slope - roll over\n#52 \u226510m - Downwards slope\n#53 5 to <10m - Safety barrier - metal\n#54 5 to <10m - Safety barrier - motorcycle friendly\n#55 \u226510m - Upwards slope - no roll over\n#56 \u226510m - No object\n#57 5 to <10m - Safety barrier - wire rope\n#58 \u226510m - Semi-rigid structure or building\n#59 \u226510m - Safety barrier - concrete\n#60 \u226510m - Safety barrier - metal\n#61 \u226510m - Safety barrier - motorcycle friendly\n#62 \u226510m - Safety barrier - wire rope\nPlease return the distance from the edge line of the nearest driving lane to the identified hazardous object(s) from <Categories> list.",
+      "categories": [
+        {
+          "Cat ID": 1,
+          "Category": "0 to <1m",
+          "Category_description": "Objects with effective distance of 0m to less than 1m from the edge line."
+        },
+        {
+          "Cat ID": 2,
+          "Category": "1 to <5m",
+          "Category_description": "Object with effective distance of 1m to less than 5m from the edge line."
+        },
+        {
+          "Cat ID": 3,
+          "Category": "5 to <10m",
+          "Category_description": "Object with effective distance of 5m to less than 10m from the edge line."
+        },
+        {
+          "Cat ID": 4,
+          "Category": "\u226510m",
+          "Category_description": "Object with effective distance equal or greater than 10m from the edge line."
+        }
+      ]
+    },
+    {
+      "Item": "Roadside severity - driver-side object",
+      "Col ID": "AD",
+      "Attribute description": "Using <Attribute description> from 17. <Attribute>: Roadside severity - driver-side distance, please return object from <Categories> list that presents on image and has highest risk (this should be coresponded to Roadside severity - driver-side distance).",
+      "categories": [
+        {
+          "Cat ID": 10,
+          "Category": "Cliff",
+          "Category_description": "Cliff or equivalent hazard, such as the edge of a high bridge, that will result in certain fatality regardless of speed."
+        },
+        {
+          "Cat ID": 11,
+          "Category": "Tree \u226510cm",
+          "Category_description": "Tree trunk greater than 10cm in diameter."
+        },
+        {
+          "Cat ID": 12,
+          "Category": "Rigid sign, post or pole \u226510cm",
+          "Category_description": "Examples are lighting columns, metal or wood sign posts greater than 10cm diameter, rigid traffic signal posts greater than 10cm diameter or fence or other posts greater than 10cm diameter."
+        },
+        {
+          "Cat ID": 15,
+          "Category": "Unprotected safety barrier end",
+          "Category_description": "Aggressive ends to safety barriers.\nExamples are ramped ends, unprotected ends, sharp ends or fish-tail terminals.\nThis category should also be used to record damaged sections of safety barrier."
+        },
+        {
+          "Cat ID": 5,
+          "Category": "Aggressive vertical face",
+          "Category_description": "Irregular rock face, wall or non-standard barrier."
+        },
+        {
+          "Cat ID": 6,
+          "Category": "Upwards slope - roll over",
+          "Category_description": "Cut face of at least 2m height that is likely to cause a vehicle to roll over (15\u00b0 to 75\u00b0), such as earth bound banks or grass banks.\nIf an upwards slope has an irregular rock faces, code it as an \u2018aggressive vertical face\u2019."
+        },
+        {
+          "Cat ID": 8,
+          "Category": "Deep drainage ditch",
+          "Category_description": "Ditch or culvert more than 1m deep."
+        },
+        {
+          "Cat ID": 9,
+          "Category": "Downwards slope",
+          "Category_description": "Downwards slope from the roadway with an angle ratio greater than a 1:4 (equivalent to 25% gradient and 15\u00b0) and a drop of >1m."
+        },
+        {
+          "Cat ID": 16,
+          "Category": "Low rigid object \u226520cm high",
+          "Category_description": "Low rigid objects which are higher than a standard curb and may cause a vehicle to rollover if hit. Includes objects such as large rock or boulders, non-standard curbs (\u226520cm high) or low barriers and walls (less than 67cm high)."
+        },
+        {
+          "Cat ID": 13,
+          "Category": "Rigid structure or building",
+          "Category_description": "Solid structures that will cause a rapid deceleration when hit.\nExamples are reinforced concrete bridge supports, culvert headwalls, retaining walls or stone and concrete buildings."
+        },
+        {
+          "Cat ID": 7,
+          "Category": "Upwards slope - no roll over",
+          "Category_description": "Cut face of at least 2m height at a gradient of 75\u00b0 or above, which a vehicle is likely to slide along when struck.\nIrregular rock faces should not be recorded."
+        },
+        {
+          "Cat ID": 14,
+          "Category": "Semi-rigid structure or building",
+          "Category_description": "Solid structures that will likely deform slightly when hit.\nExamples include houses and other similar buildings, street furniture such as bus shelters, communications cabinets or stone, masonry or brick boundary walls or fences."
+        },
+        {
+          "Cat ID": 2,
+          "Category": "Safety barrier - concrete",
+          "Category_description": "Concrete safety barrier sufficient to restrain most cars and small vehicles.\nShould be a continuous length of unbroken, undamaged safety barrier."
+        },
+        {
+          "Cat ID": 1,
+          "Category": "Safety barrier - metal",
+          "Category_description": "Metal safety barrier sufficient to restrain most cars and small vehicles (not wire rope safety barrier).\nShould be a continuous length of unbroken, undamaged safety barrier."
+        },
+        {
+          "Cat ID": 4,
+          "Category": "Safety barrier - wire rope",
+          "Category_description": "Wire rope safety barrier sufficient to restrain most cars and small vehicles.\nShould be a continuous length of unbroken, undamaged safety barrier."
+        },
+        {
+          "Cat ID": 3,
+          "Category": "Safety barrier - motorcycle friendly",
+          "Category_description": "Safety barrier designed specifically to restrain motorcycles. Should be a continuous length of unbroken, undamaged safety barrier.\nMotorcycle friendly barriers will have some form of protection for the supporting posts or legs to minimise risk of injury to the rider."
+        },
+        {
+          "Cat ID": 17,
+          "Category": "No object",
+          "Category_description": "No object within 20m of the road."
+        }
+      ]
+    },
+    {
+      "Item": "Roadside severity - passenger-side distance",
+      "Col ID": "AE",
+      "Attribute description": "Examine the roadside environment on the passenger-side of the image to identify hazardous objects that pose a risk to vehicles. Follow these steps:\n1.Identify Hazardous Objects: Look for any objects on the passenger-side that could be dangerous to vehicles, such as barriers, trees, poles, structures, or slopes.\n2. Measure Distance: Estimate the distance from the edge line of the nearest driving lane to the identified hazardous object(s).\n3.Classify Hazards: Categorize the identified hazards using the provided risk hierarchy, with #1 being the highest risk:\n#1 Any - Cliff\n#2 0 to <1m - Tree \u226510cm\n#3 0 to <1m - Rigid sign, post or pole \u226510cm\n#4 0 to <1m - Rigid structure or building\n#5 0 to <1m - Unprotected safety barrier end\n#6 0 to <1m - Low rigid object \u226520cm high\n#7 0 to <1m - Aggressive vertical face\n#8 0 to <1m - Deep drainage ditch\n#9 1 to <5m - Tree \u226510cm\n#10 1 to <5m - Rigid sign, post or pole \u226510cm\n#11 1 to <5m - Rigid structure or building\n#12 1 to <5m - Unprotected safety barrier end\n#13 1 to <5m - Low rigid object \u226520cm high\n#14 0 to <1m - Upwards slope - roll over\n#15 0 to <1m - Downwards slope\n#16 1 to <5m - Aggressive vertical face\n#17 1 to <5m - Deep drainage ditch\n#18 0 to <1m - Upwards slope - no roll over\n#19 0 to <1m - Upwards slope - roll over\n#20 1 to <5m - Downwards slope\n#21 0 to <1m - Upwards slope - no roll over\n#22 0 to <1m - Semi-rigid structure or building\n#23 1 to <5m - Semi-rigid structure or building\n#24 5 to <10m - Tree \u226510cm\n#25 5 to <10m - Rigid sign, post or pole \u226510cm\n#26 5 to <10m - Rigid structure or building\n#27 5 to <10m - Unprotected safety barrier end\n#28 5 to <10m - Low rigid object \u226520cm high\n#29 5 to <10m - Aggressive vertical face\n#30 5 to <10m - Upwards slope - roll over\n#31 5 to <10m - Deep drainage ditch\n#32 5 to <10m - Downwards slope\n#33 5 to <10m - Safety barrier - concrete\n#34 5 to <10m - Upwards slope - no roll over\n#35 0 to <1m - Safety barrier - metal\n#36 0 to <1m - Safety barrier - motorcycle friendly\n#37 1 to <5m - Safety barrier - concrete\n#38 1 to <5m - Semi-rigid structure or building\n#39 1 to <5m - Safety barrier - metal\n#40 1 to <5m - Safety barrier - motorcycle friendly\n#41 1 to <5m - Safety barrier - wire rope\n#42 1 to <5m - Safety barrier - wire rope\n#43 \u226510m - Tree \u226510cm\n#44 \u226510m - Rigid sign, post or pole \u226510cm\n#45 \u226510m - Rigid structure or building\n#46 \u226510m - Unprotected safety barrier end\n#47 \u226510m - Low rigid object \u226520cm high\n#48 \u226510m - Aggressive vertical face\n#49 \u226510m - Deep drainage ditch\n#50 5 to <10m - Safety barrier - concrete\n#51 \u226510m - Upwards slope - roll over\n#52 \u226510m - Downwards slope\n#53 5 to <10m - Safety barrier - metal\n#54 5 to <10m - Safety barrier - motorcycle friendly\n#55 \u226510m - Upwards slope - no roll over\n#56 \u226510m - No object\n#57 5 to <10m - Safety barrier - wire rope\n#58 \u226510m - Semi-rigid structure or building\n#59 \u226510m - Safety barrier - concrete\n#60 \u226510m - Safety barrier - metal\n#61 \u226510m - Safety barrier - motorcycle friendly\n#62 \u226510m - Safety barrier - wire rope\nPlease return the distance from the edge line of the nearest driving lane to the identified hazardous object(s) from <Categories> list.",
+      "categories": [
+        {
+          "Cat ID": 1,
+          "Category": "0 to <1m",
+          "Category_description": "Objects on passenger-side with effective distance of 0m to less than 1m from the edge line."
+        },
+        {
+          "Cat ID": 2,
+          "Category": "1 to <5m",
+          "Category_description": "Object on passenger-side with effective distance of 1m to less than 5m from the edge line."
+        },
+        {
+          "Cat ID": 3,
+          "Category": "5 to <10m",
+          "Category_description": "Object on passenger-side with effective distance of 5m to less than 10m from the edge line."
+        },
+        {
+          "Cat ID": 4,
+          "Category": "\u226510m",
+          "Category_description": "Object with effective distance equal or greater than 10m from the edge line."
+        }
+      ]
+    },
+    {
+      "Item": "Roadside severity - passenger-side object",
+      "Col ID": "AF",
+      "Attribute description": "Using <Attribute description> from 19. <Attribute>: Roadside severity - passenger-side distance, please return object from <Categories> list that presents on image and has highest risk (this should be coresponded to Roadside severity - passenger-side distance).",
+      "categories": [
+        {
+          "Cat ID": 10,
+          "Category": "Cliff",
+          "Category_description": "Cliff or equivalent hazard, such as the edge of a high bridge, that will result in certain fatality regardless of speed."
+        },
+        {
+          "Cat ID": 11,
+          "Category": "Tree \u226510cm",
+          "Category_description": "Tree trunk greater than 10cm in diameter."
+        },
+        {
+          "Cat ID": 12,
+          "Category": "Rigid sign, post or pole \u226510cm",
+          "Category_description": "Examples are lighting columns, metal or wood sign posts greater than 10cm diameter, rigid traffic signal posts greater than 10cm diameter or fence or other posts greater than 10cm diameter."
+        },
+        {
+          "Cat ID": 15,
+          "Category": "Unprotected safety barrier end",
+          "Category_description": "Aggressive ends to safety barriers.\nExamples are ramped ends, unprotected ends, sharp ends or fish-tail terminals.\nThis category should also be used to record damaged sections of safety barrier."
+        },
+        {
+          "Cat ID": 5,
+          "Category": "Aggressive vertical face",
+          "Category_description": "Irregular rock face, wall or non-standard barrier."
+        },
+        {
+          "Cat ID": 6,
+          "Category": "Upwards slope - roll over",
+          "Category_description": "Cut face of at least 2m height that is likely to cause a vehicle to roll over (15\u00b0 to 75\u00b0), such as earth bound banks or grass banks.\nIf an upwards slope has an irregular rock faces, code it as an \u2018aggressive vertical face\u2019."
+        },
+        {
+          "Cat ID": 8,
+          "Category": "Deep drainage ditch",
+          "Category_description": "Ditch or culvert more than 1m deep."
+        },
+        {
+          "Cat ID": 9,
+          "Category": "Downwards slope",
+          "Category_description": "Downwards slope from the roadway with an angle ratio greater than a 1:4 (equivalent to 25% gradient and 15\u00b0) and a drop of >1m."
+        },
+        {
+          "Cat ID": 16,
+          "Category": "Low rigid object \u226520cm high",
+          "Category_description": "Low rigid objects which are higher than a standard curb and may cause a vehicle to rollover if hit. Includes objects such as large rock or boulders, non-standard curbs (\u226520cm high) or low barriers and walls (less than 67cm high)."
+        },
+        {
+          "Cat ID": 13,
+          "Category": "Rigid structure or building",
+          "Category_description": "Solid structures that will cause a rapid deceleration when hit.\nExamples are reinforced concrete bridge supports, culvert headwalls, retaining walls or stone and concrete buildings."
+        },
+        {
+          "Cat ID": 7,
+          "Category": "Upwards slope - no roll over",
+          "Category_description": "Cut face of at least 2m height at a gradient of 75\u00b0 or above, which a vehicle is likely to slide along when struck.\nIrregular rock faces should not be recorded."
+        },
+        {
+          "Cat ID": 14,
+          "Category": "Semi-rigid structure or building",
+          "Category_description": "Solid structures that will likely deform slightly when hit.\nExamples include houses and other similar buildings, street furniture such as bus shelters, communications cabinets or stone, masonry or brick boundary walls or fences."
+        },
+        {
+          "Cat ID": 2,
+          "Category": "Safety barrier - concrete",
+          "Category_description": "Concrete safety barrier sufficient to restrain most cars and small vehicles.\nShould be a continuous length of unbroken, undamaged safety barrier."
+        },
+        {
+          "Cat ID": 1,
+          "Category": "Safety barrier - metal",
+          "Category_description": "Metal safety barrier sufficient to restrain most cars and small vehicles (not wire rope safety barrier).\nShould be a continuous length of unbroken, undamaged safety barrier."
+        },
+        {
+          "Cat ID": 4,
+          "Category": "Safety barrier - wire rope",
+          "Category_description": "Wire rope safety barrier sufficient to restrain most cars and small vehicles.\nShould be a continuous length of unbroken, undamaged safety barrier."
+        },
+        {
+          "Cat ID": 3,
+          "Category": "Safety barrier - motorcycle friendly",
+          "Category_description": "Safety barrier designed specifically to restrain motorcycles. Should be a continuous length of unbroken, undamaged safety barrier.\nMotorcycle friendly barriers will have some form of protection for the supporting posts or legs to minimise risk of injury to the rider."
+        },
+        {
+          "Cat ID": 17,
+          "Category": "No object",
+          "Category_description": "No object within 20m of the road."
+        }
+      ]
+    },
+    {
+      "Item": "Shoulder rumble strips",
+      "Col ID": "AG",
+      "Attribute description": "Record any textured markings running along a road which function to warn drivers leaving the lane on the passenger-side of the roadway.\nShoulder rumble strips are also known as raised profile markings. This feature provides an audio-vibratory warning to the driver.\nShoulder rumble strips will only be found on paved shoulders and should be a continuous, unbroken line.\nRumble strips may be either grooves cut into the pavement surface or raised ribs added to the road marking. Raised markers that are spaced between 10-20 cm and serve a similar purpose may also be recorded.\nShoulder rumble strips should be coded when a carriageway has rumble for both passenger-side and driver-side edge lines (regardless of whether the carriageway is divided or undivided). Do not record centre line rumble strips here.\nShoulder rumble strips should only be recorded where delineation is present.",
+      "categories": [
+        {
+          "Cat ID": 1,
+          "Category": "Not present",
+          "Category_description": "No shoulder rumble strip present."
+        },
+        {
+          "Cat ID": 2,
+          "Category": "Present",
+          "Category_description": "Shoulder rumble strip present."
+        }
+      ]
+    },
+    {
+      "Item": "Paved shoulder - driver-side",
+      "Col ID": "AH",
+      "Attribute description": "Record the width of the safe and drivable section of road from the edge line to the edge of the paving.\nCode this for driver-side.\nA narrow paved shoulder shall be recorded wherever an edge marking is present even if the edge line is very close to the pavement edge.\nIf paving begins to break up on a shoulder, the paved shoulder width should be measured up to where the edge break occurs.\nIf a road has no markings for a shoulder (no edge line), then no paved shoulder should be recorded, since a vehicle is able to travel to the edge of the sealed surface.\nPaved shoulder width on divided and undivided roads.\n For a divided carriageway, driver-side paved shoulder width is the distance from the edge line to the edge of the median. For an undivided carriageway, driver-side paved shoulder width is the distance from the edge line to the edge of the paving on the other side of the road.",
+      "categories": [
+        {
+          "Cat ID": 4,
+          "Category": "_None_",
+          "Category_description": "There is no paved shoulder (no edge line present)."
+        },
+        {
+          "Cat ID": 3,
+          "Category": "Narrow 0m to <1m",
+          "Category_description": "Paved shoulder is 0m to less than 1.0m (edge line is present)."
+        },
+        {
+          "Cat ID": 2,
+          "Category": "Medium 1m to <2.4m",
+          "Category_description": "Paved shoulder is 1m to less than 2.4m (edge line is present)."
+        },
+        {
+          "Cat ID": 1,
+          "Category": "Wide \u22652.4m",
+          "Category_description": "Paved shoulder is greater than 2.4m (edge line is present)."
+        }
+      ]
+    },
+    {
+      "Item": "Paved shoulder - passenger-side",
+      "Col ID": "AI",
+      "Attribute description": "Please refer to <Attribute description> in Paved shoulder - driver-side. Record this <Attibute> for the passenger-side of the road.",
+      "categories": [
+        {
+          "Cat ID": 4,
+          "Category": "_None_",
+          "Category_description": "There is no paved shoulder (no edge line present)."
+        },
+        {
+          "Cat ID": 3,
+          "Category": "Narrow 0m to <1m",
+          "Category_description": "Paved shoulder is 0m to less than 1.0m (edge line is present)."
+        },
+        {
+          "Cat ID": 2,
+          "Category": "Medium 1m to <2.4m",
+          "Category_description": "Paved shoulder is 1m to less than 2.4m (edge line is present)."
+        },
+        {
+          "Cat ID": 1,
+          "Category": "Wide \u22652.4m",
+          "Category_description": "Paved shoulder is greater than 2.4m (edge line is present)."
+        }
+      ]
+    },
+    {
+      "Item": "Intersection type",
+      "Col ID": "AJ",
+      "Attribute description": "Record the presence and type of intersections. Do not record property access points, unless they are large enough that turning bays or traffic signals are present. For more information on how to code urban laneways, see <Attribute description> in 28. <Attribute>: Property access points to choose if it is intersection or property access points.",
+      "categories": [
+        {
+          "Cat ID": 8,
+          "Category": "4-leg (unsignalised) with no protected turn lane",
+          "Category_description": "Four or more leg intersection or crossroads with no signals or a protected turn lane (crossing opposing traffic)."
+        },
+        {
+          "Cat ID": 7,
+          "Category": "4-leg (unsignalised) with protected turn lane",
+          "Category_description": "Four or more leg intersection or crossroads with a protected turn lane (crossing opposing traffic) but no signals."
+        },
+        {
+          "Cat ID": 10,
+          "Category": "4-leg (signalised) with no protected turn lane",
+          "Category_description": "Four or more intersection or crossroads with signals but no protected turn lane (crossing opposing traffic)."
+        },
+        {
+          "Cat ID": 4,
+          "Category": "3-leg (unsignalised) with no protected turn lane",
+          "Category_description": "Three leg intersection or T-junction with no protected turn lane (crossing opposing traffic) or signals."
+        },
+        {
+          "Cat ID": 3,
+          "Category": "3-leg (unsignalised) with protected turn lane",
+          "Category_description": "Three leg intersection or T-junction with a protected turn lane (crossing opposing traffic) but no signals."
+        },
+        {
+          "Cat ID": 17,
+          "Category": "Mini roundabout",
+          "Category_description": "Small roundabout with a radius of less than 4m typically found in low speed urban areas. Mini-roundabouts have a central circular island that is flush with the road surface (or slightly raised) and are commonly constructed using a white road marking or other coloured surface."
+        },
+        {
+          "Cat ID": 6,
+          "Category": "3-leg (signalised) with no protected turn lane",
+          "Category_description": "Three leg intersection with signals but no protected turn lane (crossing opposing traffic)."
+        },
+        {
+          "Cat ID": 9,
+          "Category": "4-leg (signalised) with protected turn lane",
+          "Category_description": "Four or more leg intersection or crossroads with a protected turn lane (crossing opposing traffic) and signals."
+        },
+        {
+          "Cat ID": 5,
+          "Category": "3-leg (signalised) with protected turn lane",
+          "Category_description": "Three leg intersection or T-junction with a protected turn lane (crossing opposing traffic) and signals."
+        },
+        {
+          "Cat ID": 2,
+          "Category": "Roundabout",
+          "Category_description": "Circular intersection that flows in a single direction about a central island of 4m radius or more."
+        },
+        {
+          "Cat ID": 13,
+          "Category": "Railway Crossing - passive",
+          "Category_description": "An at-grade railway crossing with give way or stop signage only (or no signage)."
+        },
+        {
+          "Cat ID": 1,
+          "Category": "Merge lane",
+          "Category_description": "Merge lane for traffic entering the road. Merge lanes typically occur at grade separated intersections.\nDo not code filter lanes (intersection channelization) or exit (diverge) lanes where vehicles are exiting the road.\nOnly record the merge lane once - even if it spans two coding segments."
+        },
+        {
+          "Cat ID": 14,
+          "Category": "Railway Crossing - active",
+          "Category_description": "An at-grade railway crossing with a physical device to warn of an approaching train (flashing lights and/or boom gates)."
+        },
+        {
+          "Cat ID": 15,
+          "Category": "Median crossing point - informal",
+          "Category_description": "An informal U-turn location without acceleration or deceleration lanes and/or with poor condition pavement surface. These median crossings have not been formally designed but rather developed informally overtime through regular local use."
+        },
+        {
+          "Cat ID": 16,
+          "Category": "Median crossing point - formal",
+          "Category_description": "A formal (designed) U-turn location. Appropriate acceleration and deceleration lanes may or may not be present. Record this detail plus condition of median pavement surface under \u2018intersection quality\u2019."
+        },
+        {
+          "Cat ID": 12,
+          "Category": "_None_",
+          "Category_description": "No intersection present."
+        }
+      ]
+    },
+    {
+      "Item": "Intersection channelisation",
+      "Col ID": "AK",
+      "Attribute description": "Record if there are raised islands or coloured hatching present at an intersection that designate intended vehicle paths. Do not code informal channelization, for example, where vehicles regularly cut a corner or there is more than one entry to a side road. Channelization is the separation or regulation of conflicting traffic movements into defined paths of travel. Traffic islands or pavement markings are used to facilitate the safe and orderly movements of both vehicles and pedestrians. Channelization is primarily used to separate turning movements from through movements. If 24. <Attribute>: Intersection type is recored 'None', this attribute should be coded as 'Not present'.",
+      "categories": [
+        {
+          "Cat ID": 1,
+          "Category": "Not present",
+          "Category_description": "No channelization present at an intersection."
+        },
+        {
+          "Cat ID": 2,
+          "Category": "Present",
+          "Category_description": "Channelization present with either raised or coloured islands that designate the intended vehicle path."
+        }
+      ]
+    },
+    {
+      "Item": "Intersecting road volume",
+      "Col ID": "AL",
+      "Attribute description": "Record an estimate of the AADT of the intersecting road.\nWhere volume data or local knowledge is not available, estimates of the intersecting road volume can be made using aerial photo maps (within the inspection system software or software like Google Earth). The estimate should consider what towns, villages, or cities the intersecting road connects to, and development along the intersecting road.\nFor railway crossings an estimate of the number of trains running through the crossing per day is required. If 24. <Attribute>: Intersection type is not 'None', this attribute should be coded as one of these options {\u226515,000 vehicles,10,000 to 15,000 vehicles,5,000 to 10,000 vehicles,1,000 to 5,000 vehicles,100 to 1,000 vehicles,1 to 100 vehicles}, which deatials are avaliable in <Category description>. If 24. <Attribute>: Intersection type is recored 'None', this attribute should be coded as 'Not applicable'",
+      "categories": [
+        {
+          "Cat ID": 1,
+          "Category": "\u226515,000 vehicles",
+          "Category_description": "Over 15,000 vehicles per day (vpd). Where volume data or local knowledge is not available, assume over 15,000 vpd where the intersecting road is: Divided with three or more lanes provided for side road traffic in each direction; or Multi-lane merge lanes associated with grade separated intersections."
+        },
+        {
+          "Cat ID": 2,
+          "Category": "10,000 to 15,000 vehicles",
+          "Category_description": "10,000 to 15,000 vehicles per day (vpd). Where volume data or local knowledge is not available, assume 10,000 to 15,000 vpd where the intersecting road is undivided with three or more lanes provided for side road traffic in each direction, or single lane merge lanes associated with grade separated intersections."
+        },
+        {
+          "Cat ID": 3,
+          "Category": "5,000 to 10,000 vehicles",
+          "Category_description": "5,000 to 10,000 vehicles per day (vpd). Where volume data or local knowledge is not available, assume 5,000 to 10,000 vpd where the intersecting road is undivided with two lanes provided for side road traffic in each direction."
+        },
+        {
+          "Cat ID": 4,
+          "Category": "1,000 to 5,000 vehicles",
+          "Category_description": "1,000 to 5,000 vehicles per day (vpd). Where volume data or local knowledge is not available, assume 1,000 to 5,000 vpd where the intersecting road is undivided with one lane provided for side road traffic in each direction."
+        },
+        {
+          "Cat ID": 5,
+          "Category": "100 to 1,000 vehicles",
+          "Category_description": "100 to 1,000 vehicles per day (vpd). Where volume data or local knowledge is not available, assume 100 to 1,000 vpd where the intersecting road is a paved undivided road."
+        },
+        {
+          "Cat ID": 6,
+          "Category": "1 to 100 vehicles",
+          "Category_description": "Up to 100 vehicles per day (vpd). Where volume data or local knowledge is not available, assume 1 to 100 vpd where the intersecting road is a single-track (one-lane) undivided, unpaved road. Can also be used for very low flow intersections in remote rural areas."
+        },
+        {
+          "Cat ID": 7,
+          "Category": "Not applicable",
+          "Category_description": "No intersecting road."
+        }
+      ]
+    },
+    {
+      "Item": "Intersection quality",
+      "Col ID": "AM",
+      "Attribute description": "Record the quality of the intersection design, advance warning, signing, and markings.\nIntersection quality is an indication of how well a driver can anticipate intersection conditions and prepare accordingly. Factors that contribute to \u2018poor\u2019 intersection quality may include:\n\u2022 Very short merge lanes\n\u2022 Poor deflection angles at roundabouts (where the approach means roundabout can be entered at high speeds)\n\u2022 Lack of advance signing and marking on an intersection approach where the intersection is not clearly visible to approaching drivers (i.e. where approach sight distance is limited)\n\u2022 Lack of facilities for motorcycles, pedestrians and bicycles.\nIntersection quality is factored into motorcycle, pedestrian and bicycle Star Ratings. For an intersection to be considered adequate, vehicle drivers must also be able to anticipate the presence and movements of other road user groups and vice versa. The examples below demonstrate the difference between a \u2018poor quality\u2019 intersection and an intersection of \u2018adequate quality\u2019 where on-road markings improve visibility and turning movements for motorcycles and bicycles. If 24. <Attribute>: Intersection type is recored 'None', this <Attribute> is 'Not applicable'. ",
+      "categories": [
+        {
+          "Cat ID": 2,
+          "Category": "Poor",
+          "Category_description": "Intersection design is poor. Necessary signs and markings are absent, sight distance is limited or obstructed, and/or roads and conflicting traffic flows do not intersect at right angles. Has inadequate facilities for motorcyclists, pedestrians and bicyclists."
+        },
+        {
+          "Cat ID": 1,
+          "Category": "Adequate",
+          "Category_description": "Intersection design is adequate. Necessary signing and markings are present. Has adequate facilities for motorcyclists, pedestrians and bicyclists."
+        },
+        {
+          "Cat ID": 3,
+          "Category": "Not applicable",
+          "Category_description": "No intersection present."
+        }
+      ]
+    },
+    {
+      "Item": "Property access points",
+      "Col ID": "AN",
+      "Attribute description": "Record the number of commercial and residential driveways and minor access lanes.\nThis includes any points where vehicles can enter or exit the roadway other than public roads. This may include entries to large carparks, parkland, rest areas and laneways.\nDo not record a property access point which is large enough that turning bays or traffic signals are present. In this case, it should be coded as an intersection under 24.<Attribute>: Intersections .\nDo not record temporary entries, such as for construction, or controlled entries where gates are present.\nHow do I code urban laneways? Some cities have extra large city blocks that feature extensive laneway networks, which provide access to local residences and businesses. Entries to these laneways may be considered a property access point or an intersecting street, depending on several characteristics. The table below gives a general guide on when a laneway is a property access point and when it is considered an intersecting road. Characteristics are listed in priority order. \nRecord as an intersecting road 1) If the intersection has regular features, such as turning bays or traffic signals, or intersecting traffic has access to both directions of travel. 2) Laneway provides through access, serves as a trunk route for other laneways, or provides access to a large area of residential and commercial development. and 3) Two cars can pass or traffic is more than 100 vehicles per day.\nRecord as a property access point 1) No intersection features; access to side road only or only one direction of travel. 2) Laneway provides limited access to residential and commercial establishments. 3) Two cars would be unable to pass or traffic is less than 100 vehicles per day.",
+      "categories": [
+        {
+          "Cat ID": 1,
+          "Category": "Commercial access \u22651",
+          "Category_description": "One or more commercial access points within the coding segment. Includes service stations, shops and roadside cafes, small carparks and rest stops. May also include entrances to industrial sites such as quarries or mining sites."
+        },
+        {
+          "Cat ID": 2,
+          "Category": "Residential access \u22653",
+          "Category_description": "Three or more residential access points or an access point that serves three or more residential properties."
+        },
+        {
+          "Cat ID": 3,
+          "Category": "Residential access <3",
+          "Category_description": "Less than three residential access points or an access point that serves three or less residential properties. May also include minor farm accesses and other minor tracks used by motor vehicles to gain occasional access to the main carriageway."
+        },
+        {
+          "Cat ID": 4,
+          "Category": "_None_",
+          "Category_description": "No residential or commercial access points."
+        }
+      ]
+    },
+    {
+      "Item": "Number of lanes",
+      "Col ID": "AO",
+      "Attribute description": "Please count the number of traffic lanes in the image in the direction of travel.\n\nInstructions:\n\n- Use the lane markings to determine the number of lanes. For example, if there are two visible lane markings, there should be three lanes.\n- Do not count turning lanes at intersections.\n- Do count any bus or transit lanes that are part of the main carriageway.\n- If there are no lane markings, estimate the number of lanes by dividing the total road width by the typical width of one lane.\n- Provide a clear answer with the total number of lanes counted.",
+      "categories": [
+        {
+          "Cat ID": 4,
+          "Category": "Four or more",
+          "Category_description": "Four or more lanes in direction of travel."
+        },
+        {
+          "Cat ID": 3,
+          "Category": "Three",
+          "Category_description": "Three lanes in direction of travel."
+        },
+        {
+          "Cat ID": 6,
+          "Category": "Three and two",
+          "Category_description": "Undivided road only\nThree lanes in one direction and two in the other direction."
+        },
+        {
+          "Cat ID": 2,
+          "Category": "Two",
+          "Category_description": "Two lanes in direction of travel."
+        },
+        {
+          "Cat ID": 5,
+          "Category": "Two and one",
+          "Category_description": "Undivided road only\nTwo lanes in one direction and one in the other direction."
+        },
+        {
+          "Cat ID": 1,
+          "Category": "One",
+          "Category_description": "One lane in direction of travel."
+        }
+      ]
+    },
+    {
+      "Item": "Lane width",
+      "Col ID": "AP",
+      "Attribute description": "Record the distance from the centre of the edge line to the centre of the adjacent lane marking. If the road has no edge line, the lane width is measured from the edge of the pavement to the adjacent lane marking. For roads with one lane in each direction, the adjacent lane marking will be the centre line.\nWhere lane width varies, record the narrowest lane width.\nIf no lane markings are present, the total road width should be divided by the number of traffic streams to determine the lane width. \nLane width approximations: in the absence of exact lane measurements, lane width can be approximated using typical vehicles sizes. For the purposes of estimation, the typical widths of vehicles are as follows:\n\u2022 Truck or bus = 2.5m\n\u2022 Tractor = 2.3m\n\u2022 Van/minibus = 2m\n\u2022 Family car = 1.8m\n\u2022 Light 3- or 4-wheeled motorised vehicle = 1.2m\nA truck or lorry would struggle to fit in a narrow lane, comfortably fit in a medium lane, and have ample space on each side in a wide lane.",
+      "categories": [
+        {
+          "Cat ID": 3,
+          "Category": "Narrow 0m to <2.75m",
+          "Category_description": "Lane width is less than 2.75m."
+        },
+        {
+          "Cat ID": 2,
+          "Category": "Medium 2.75m to <3.25m",
+          "Category_description": "Lane width is from 2.75m to 3.25m."
+        },
+        {
+          "Cat ID": 1,
+          "Category": "Wide \u22653.25m",
+          "Category_description": "Lane width is greater than 3.25m."
+        }
+      ]
+    },
+    {
+      "Item": "Curvature",
+      "Col ID": "AQ",
+      "Attribute description": "Record the horizontal alignment of the road.\nCurvature is gauged according to approximate curve radius and the appropriate safe approach and driven speed under normal conditions. It may also be collected from sensors built into an inspection system, for example accelerometer and gyroscopic data.\nRecord each curve from its start point to end point, even if this spans several coding segments.\nIf there is an advisory speed sign, use the marked speed for rating the horizontal alignment. Do not use the speed of the inspection vehicle since this can be affected by other factors, such as traffic flow.\nIf the road is straight, record it as \u2018straight or gently curving\u2019.\nDo not code curvature associated with roundabouts or other intersection related road alignment modifications, unless the curve precedes the roundabout as a traffic calming measure or as a natural characteristic of the road.",
+      "categories": [
+        {
+          "Cat ID": 4,
+          "Category": "Very sharp",
+          "Category_description": "A curve that can only be driven at less than 40km/h with an approximate radius of less than 200m."
+        },
+        {
+          "Cat ID": 3,
+          "Category": "Sharp",
+          "Category_description": "A curve that can only be driven between 40km/h and 70km/h with an approximate radius of 200m to 400m."
+        },
+        {
+          "Cat ID": 2,
+          "Category": "Moderate",
+          "Category_description": "A curve that can be driven between 70km/h and 100km/h with an approximate radius of curve 400m to 800m."
+        },
+        {
+          "Cat ID": 1,
+          "Category": "Straight or gently curving",
+          "Category_description": "A straight road or curve that can be driven at 100km/h or more with an approximate radius of curve greater than 800m."
+        }
+      ]
+    },
+    {
+      "Item": "Quality of curve",
+      "Col ID": "AR",
+      "Attribute description": "Record how easy it is to judge how sharp a curve is and if it can be driven safely.\nThe quality of the curve will reflect the extent to which signs and markings help the driver to judge the correct curvature, and the sight distance in advance of, and around, the curve.\nA practical indication of the quality of the curve might be whether the driver needs to adjust speed suddenly or unexpectedly on the approach to, or within the curve. This may occur even though there has been an attempt through signing to warn the driver of extra risk.\nApply the same quality of curve code to the whole curve, from its start point to its end point.",
+      "categories": [
+        {
+          "Cat ID": 2,
+          "Category": "Poor",
+          "Category_description": "A curve where rapid or unexpected speed adjustments are needed to negotiate the curve, and there is a lack of advanced signing and/or missing or poorly maintained road markings."
+        },
+        {
+          "Cat ID": 3,
+          "Category": "Not applicable",
+          "Category_description": "Signing, marking and sight distance enable a driver to judge curvature. Curves of adequate quality may incorporate chevron alignment markers (CAMs) or other reflective hazard markers."
+        },
+        {
+          "Cat ID": 1,
+          "Category": "Adequate",
+          "Category_description": "The road is straight or gently curving."
+        }
+      ]
+    },
+    {
+      "Item": "Grade",
+      "Col ID": "AS",
+      "Attribute description": "Record the gradient of the road along its length.\nGrade refers to both upward and downward slopes.",
+      "categories": [
+        {
+          "Cat ID": 5,
+          "Category": "\u226510%",
+          "Category_description": "A steep rise of 10m or more over a 100m length, or an angle of 5.75 degrees or above.\nThis grade would typically be encountered in mountainous terrain or short, steep sections in rolling terrain."
+        },
+        {
+          "Cat ID": 4,
+          "Category": "7.5% to <10%",
+          "Category_description": "A moderate rise of 7.5m to <10m over a 100m length, or an angle of 4.3 to <5.75 degrees.\nThis grade would typically be encountered in rolling, hill or foothill terrain, and in moderately sloping sections of mountainous terrain."
+        },
+        {
+          "Cat ID": 1,
+          "Category": "0% to <7.5%",
+          "Category_description": "Flat or gentle rise of 0m to <7.5m over a 100m length, or an angle of 0 to <4.3 degrees.\nThis grade would typically be encountered in level or gently rolling terrain."
+        }
+      ]
+    },
+    {
+      "Item": "Road condition",
+      "Col ID": "AT",
+      "Attribute description": "Record the condition of the road surface.\nThis includes the ability of the road to provide a level, even running surface that is free from major surface defects that may adversely affect the vehicle path.\nRecord a \u2018poor\u2019 or \u2018medium\u2019 road condition if defects are present for 10m or more at any point on a coding segment.\nDefects that should be considered to include anything that would cause an impact on vehicle control or path, some examples are:\n\u2022 Deformation of the tarmac, including rutting or uneven surface.\n\u2022 Holes in the road surface due to loss of material which is sufficiently wide or deep enough to cause a severe jolt or loss of control to the vehicle.\n\u2022 Edge defects including any road shoulder seal problems which encroach on the driven lane or that would require small vehicles using the road shoulder to enter regular traffic lanes.",
+      "categories": [
+        {
+          "Cat ID": 3,
+          "Category": "Poor",
+          "Category_description": "Road has serious defects which are likely to result in frequent or unpredictable impact on vehicle control or on motorcyclists and bicyclists."
+        },
+        {
+          "Cat ID": 2,
+          "Category": "Medium",
+          "Category_description": "Road has a number of minor defects which may result in occasional impact on vehicle control or path or on motorcyclists and bicyclists."
+        },
+        {
+          "Cat ID": 1,
+          "Category": "Good",
+          "Category_description": "Road has very few or no defects and is adequate for all road users. There is no potential impact on vehicle control or path or on motorcyclists and bicyclists."
+        }
+      ]
+    },
+    {
+      "Item": "Skid resistance / grip",
+      "Col ID": "AU",
+      "Attribute description": "Record the skidding resistance and texture depth of the road surface.\nSurface texture deficiencies includes surface friction issues such as loose gravel, flushing or stripping which could reduce traction for vehicles in wet or dry conditions.\nThe attribute recorded should reflect the general condition of the road for the majority of the coding segment.",
+      "categories": [
+        {
+          "Cat ID": 5,
+          "Category": "Unsealed - poor",
+          "Category_description": "The road surface is unpaved and has a low grip surface.\nFor example, the surface is covered in loose gravel, or a natural surface is likely to be slippery in wet conditions (e.g. silt/clay surfaces)."
+        },
+        {
+          "Cat ID": 4,
+          "Category": "Unsealed - adequate",
+          "Category_description": "The road surface is unpaved with a relatively good surface grip.\nFor example, the surface is compacted aggregate providing a surface that remains firm in all prevailing weather conditions."
+        },
+        {
+          "Cat ID": 3,
+          "Category": "Sealed - poor",
+          "Category_description": "The road surface is sealed but has a low grip surface.\nFor example, the road surface is paved and looks smooth and shiny for more than 20% of the preferred vehicle path, or loose gravel or other material is present for more than 20%."
+        },
+        {
+          "Cat ID": 2,
+          "Category": "Sealed - medium",
+          "Category_description": "The road surface is sealed and has a medium grip surface.\nFor example, the road surface is paved and looks smooth and shiny for up to 20% of the preferred vehicle path, or loose gravel or other material is present for up to 20%."
+        },
+        {
+          "Cat ID": 1,
+          "Category": "Sealed - adequate",
+          "Category_description": "The road surface is sealed and is expected to have adequate skid resistance performance. There are no visible smooth and shiny sections in the preferred vehicle path."
+        }
+      ]
+    },
+    {
+      "Item": "Delineation",
+      "Col ID": "AV",
+      "Attribute description": "Record the adequacy of road lines and markings.\nDelineation should inform drivers of road conditions to keep them within the driven lane, aware of road and intersection conditions in advance and in location and provide clear visible indications of the presence and path of motorcyclists and bicyclists where appropriate.\nThe delineation is based on a combination of the following factors:\n\u2022 Centre lines, lane markers and edge lines\n\u2022 Guideposts and delineators, road studs and hazard markers, and\n\u2022 Signage (on road and posted) within an appropriate distance of the approach.\nWarning signs must be present to warn drivers of any sudden change in the road conditions, such as lane narrowing.\nWhat is an appropriate distance for warning signs ahead of hazards and other road conditions? Warning or directional signs are placed well ahead of points of interest (e.g. an intersection or rail crossing) or hazard to give drivers adequate warning. This may mean that the sign warning of a hazard is in a different coding segment. The distance is generally determined by the traffic speed. The specifications will vary from country to country, however, as a general guide:\n\u2022 Less than 30km/h (20mph): At location\n\u2022 30km/h - 50km/h (20mph - 30mph): 5m - 75m\n\u2022 50km/h - 80km/h (30mph - 50mph): 50m - 200m\n\u2022 80km/h -100km/h (50mph - 60mph): 150m - 250m >100km/h (>60mph): 200m - 400m\nFor urban road assessments, curbs and channelization may be considered in place of edge lines where vehicle parking, paved shoulder or on road bicycle or motorcycle lanes are not present.\nDelineation, particularly the presence and quality of reflective signs and markers, is important for safety at night.\n\u2018Poor\u2019 or \u2018adequate\u2019 delineation should be consistent with that recorded as part of quality of curve, intersections and pedestrian crossings.",
+      "categories": [
+        {
+          "Cat ID": 2,
+          "Category": "Poor",
+          "Category_description": "Signing of hazards, or centre and edge markings are generally absent or in poor condition."
+        },
+        {
+          "Cat ID": 1,
+          "Category": "Adequate",
+          "Category_description": "Signs warning of severe hazards, and centre and edge markings are generally present and visible."
+        }
+      ]
+    },
+    {
+      "Item": "Street lighting",
+      "Col ID": "AW",
+      "Attribute description": "Record the presence of street lighting.\nA street light or street lamp is a raised source of light often mounted on a lamp column or pole either on the side of the road or within the median or suspended on a wire above the road to provide illumination. \nStreet lighting should be sufficient enough to provide illumination of and for pedestrians and bicyclists.",
+      "categories": [
+        {
+          "Cat ID": 1,
+          "Category": "Not present",
+          "Category_description": "Street lighting is not present or is insufficient."
+        },
+        {
+          "Cat ID": 2,
+          "Category": "Present",
+          "Category_description": "Street light is present that is sufficient to illuminate pedestrians and bicyclists."
+        }
+      ]
+    },
+    {
+      "Item": "Pedestrian crossing facilities - inspected road",
+      "Col ID": "AX",
+      "Attribute description": "Record the presence of purpose-built pedestrian crossing facilities on the inspected road. If there are two or more pedestrian crossing facilities at an intersection of the inspected road (or more than one intersection), record the one with highest risk. Record the one which presents higher risk (or first in the direction of travel if both the same).",
+      "categories": [
+        {
+          "Cat ID": 7,
+          "Category": "No facility",
+          "Category_description": "No provision for pedestrians crossing."
+        },
+        {
+          "Cat ID": 6,
+          "Category": "Refuge only",
+          "Category_description": "Pedestrian central refuge island is provided. Do not code poorly designed refuge islands or medians of insufficient width or protection."
+        },
+        {
+          "Cat ID": 5,
+          "Category": "Marked crossing only",
+          "Category_description": "Clearly-marked pedestrian crossing without a refuge island. Not signalised."
+        },
+        {
+          "Cat ID": 17,
+          "Category": "Raised unmarked crossing",
+          "Category_description": "Unmarked crossing with a raised (speed reducing) platform without a refuge island. Pedestrians typically give way to cars on this type of crossing."
+        },
+        {
+          "Cat ID": 4,
+          "Category": "Marked crossing with refuge",
+          "Category_description": "Clearly-marked pedestrian crossing with refuge island."
+        },
+        {
+          "Cat ID": 16,
+          "Category": "Raised unmarked crossing with refuge",
+          "Category_description": "Unmarked crossing with a raised (speed reducing) platform and refuge island. Pedestrians typically give way to cars on this type of crossing."
+        },
+        {
+          "Cat ID": 15,
+          "Category": "Raised marked crossing",
+          "Category_description": "Clearly-marked pedestrian crossing with a raised (speed reducing) platform without a refuge island."
+        },
+        {
+          "Cat ID": 14,
+          "Category": "Raised marked crossing with refuge",
+          "Category_description": "Clearly-marked pedestrian crossing with a raised (speed reducing) platform and refuge island."
+        },
+        {
+          "Cat ID": 3,
+          "Category": "Signalised crossing",
+          "Category_description": "Designated pedestrian crossing with traffic signals that control pedestrian and vehicle movements. Only record a signalised crossing facility where pedestrian-specific signals are present and provide a pedestrian phase."
+        },
+        {
+          "Cat ID": 2,
+          "Category": "Signalised crossing with refuge",
+          "Category_description": "Designated pedestrian crossing with refuge island and traffic signals that control pedestrian and vehicle movements. Only record a signalised crossing facility where pedestrian-specific signals are present and provide a pedestrian phase."
+        },
+        {
+          "Cat ID": 1,
+          "Category": "Grade separated facility",
+          "Category_description": "A physically separated pedestrian crossing that does not bring pedestrians into conflict with road traffic flows. May include pedestrian overbridges or underpasses (subways).\nDo not code grade separated facilities if pedestrians cross at street level."
+        }
+      ]
+    },
+    {
+      "Item": "Pedestrian crossing quality",
+      "Col ID": "AY",
+      "Attribute description": "Record effectiveness of the pedestrian crossing on the inspected road or side road.\nIf two pedestrian crossings are recorded within one coding segment and are of different standard, record the one of lower quality. If quality of side road crossings cannot be ascertained from the image, record the quality for crossings on the inspected road only.\nRecord pedestrian crossing quality wherever a pedestrian crossing facility is recorded on the inspected road. \u2018Poor\u2019 or \u2018adequate\u2019 pedestrian crossing quality should consider other relevant attributes such as delineation, street lighting, sight distance, and intersection quality (where it is located at an intersection).",
+      "categories": [
+        {
+          "Cat ID": 2,
+          "Category": "Poor",
+          "Category_description": "The pedestrian crossing facility is ineffective. Vehicle drivers do not stop or give pedestrian right-of-way, the facility is not clearly visible or cannot be anticipated by vehicle drivers, and/or the facility is obstructed."
+        },
+        {
+          "Cat ID": 1,
+          "Category": "Adequate",
+          "Category_description": "The pedestrian crossing is effective. Vehicle drivers stop and give pedestrians right-of-way, the facility is clearly visible and can be anticipated by vehicle drivers, and the facility is not obstructed."
+        },
+        {
+          "Cat ID": 3,
+          "Category": "Not applicable",
+          "Category_description": "No pedestrian crossing facility is present."
+        }
+      ]
+    },
+    {
+      "Item": "Pedestrian crossing facilities - intersecting road",
+      "Col ID": "AZ",
+      "Attribute description": "Record the presence of purpose-built pedestrian crossing facilities on the side (intersecting) road. If there are two or more pedestrian crossing facilities at an intersection of the inspected road (or more than one intersection), record the one with highest risk. Record the one in the direction of travel.",
+      "categories": [
+        {
+          "Cat ID": 7,
+          "Category": "No facility",
+          "Category_description": "No provision for pedestrians crossing."
+        },
+        {
+          "Cat ID": 6,
+          "Category": "Refuge only",
+          "Category_description": "Pedestrian central refuge island is provided. Do not code poorly designed refuge islands or medians of insufficient width or protection."
+        },
+        {
+          "Cat ID": 5,
+          "Category": "Marked crossing only",
+          "Category_description": "Clearly-marked pedestrian crossing without a refuge island. Not signalised."
+        },
+        {
+          "Cat ID": 17,
+          "Category": "Raised unmarked crossing",
+          "Category_description": "Unmarked crossing with a raised (speed reducing) platform without a refuge island. Pedestrians typically give way to cars on this type of crossing."
+        },
+        {
+          "Cat ID": 4,
+          "Category": "Marked crossing with refuge",
+          "Category_description": "Clearly-marked pedestrian crossing with refuge island."
+        },
+        {
+          "Cat ID": 16,
+          "Category": "Raised unmarked crossing with refuge",
+          "Category_description": "Unmarked crossing with a raised (speed reducing) platform and refuge island. Pedestrians typically give way to cars on this type of crossing."
+        },
+        {
+          "Cat ID": 15,
+          "Category": "Raised marked crossing",
+          "Category_description": "Clearly-marked pedestrian crossing with a raised (speed reducing) platform without a refuge island."
+        },
+        {
+          "Cat ID": 14,
+          "Category": "Raised marked crossing with refuge",
+          "Category_description": "Clearly-marked pedestrian crossing with a raised (speed reducing) platform and refuge island."
+        },
+        {
+          "Cat ID": 3,
+          "Category": "Signalised crossing",
+          "Category_description": "Designated pedestrian crossing with traffic signals that control pedestrian and vehicle movements. Only record a signalised crossing facility where pedestrian-specific signals are present and provide a pedestrian phase."
+        },
+        {
+          "Cat ID": 2,
+          "Category": "Signalised crossing with refuge",
+          "Category_description": "Designated pedestrian crossing with refuge island and traffic signals that control pedestrian and vehicle movements.\nOnly record a signalised crossing facility where pedestrian-specific signals are present and provide a pedestrian phase."
+        },
+        {
+          "Cat ID": 1,
+          "Category": "Grade separated facility",
+          "Category_description": "A physically separated pedestrian crossing that does not bring pedestrians into conflict with road traffic flows. May include pedestrian overbridges or underpasses (subways). Do not code grade separated facilities if pedestrians cross at street level."
+        }
+      ]
+    },
+    {
+      "Item": "Pedestrian fencing",
+      "Col ID": "BA",
+      "Attribute description": "Record the presence pedestrian fencing or other barriers which effectively control pedestrian crossing flow.\nPedestrian fencing may be in the form of safety barriers, regular fences (non-safety barrier) or other forms of barriers such as shrubs and hedges.\nPedestrian fencing/barriers can be on one or both sides or the middle of a road.\nDo not code pedestrian fencing where there is evidence that pedestrians traverse through or over the fence/barrier.\nPedestrian fencing should be present for the whole coding segment except where an at-grade pedestrian crossing is present.",
+      "categories": [
+        {
+          "Cat ID": 1,
+          "Category": "Not present",
+          "Category_description": "Pedestrian fencing/barriers are incomplete or ineffective."
+        },
+        {
+          "Cat ID": 2,
+          "Category": "Present",
+          "Category_description": "Pedestrian fencing is complete and effective. Pedestrian fencing can be on one or two sides or in the centre of the road."
+        }
+      ]
+    },
+    {
+      "Item": "Speed management / traffic calming",
+      "Col ID": "BB",
+      "Attribute description": "Record the presence of road infrastructure features that will typically reduce the operating speed by 5km/h to 10km/h below the speed limit. Features may include curb build-outs, speed humps, raised tables, entry treatments, speed cushions, chicanes and modified intersections. Do not record roundabouts or mini-roundabouts. Do not record speed cameras. Speed cameras are only considered effective tools for enforcing the posted speed, not reducing it to below the posted speed.",
+      "categories": [
+        {
+          "Cat ID": 2,
+          "Category": "Present",
+          "Category_description": "Speed management features present and sufficient to reduce the operating speed 5-10km/h below the speed limit."
+        },
+        {
+          "Cat ID": 1,
+          "Category": "Not present",
+          "Category_description": "No speed management features present."
+        }
+      ]
+    },
+    {
+      "Item": "Vehicle parking",
+      "Col ID": "BC",
+      "Attribute description": "Record the extent of vehicle parking along the side of the road.\nVehicle parking includes parked vehicles and on-street parking spaces (even if no vehicles are present), bus stop bays, taxi ranks, and any other designated places where vehicles can stop on the side of the road (such as emergency stopping lanes) within 2m of the outside edge of the driveable lane.\nFor cities and urban environments, on-street parking may be assumed if space is available and where parking restrictions are either not present or present but not enforced. Vehicle parking can also vary significantly depending on the time of day and on the surrounding land-use and road functions. Land-use data and local knowledge may be used to record vehicle parking.",
+      "categories": [
+        {
+          "Cat ID": 3,
+          "Category": "Two side",
+          "Category_description": "Vehicles park on both sides of the road."
+        },
+        {
+          "Cat ID": 2,
+          "Category": "One side",
+          "Category_description": "Vehicles park on one side of the road."
+        },
+        {
+          "Cat ID": 1,
+          "Category": "_None_",
+          "Category_description": "No vehicle parking present."
+        }
+      ]
+    },
+    {
+      "Item": "Sidewalk - driver-side",
+      "Col ID": "BD",
+      "Attribute description": "Record the presence of pedestrian sidewalks on the driver-side of the road.\nA sidewalk is a purpose-built facility for pedestrians that has an all-weather surface (sealed or unsealed) and which provides a reliable surface and space for pedestrians to walk.\nDo not code paved shoulders or pedestrian crossing facilities here.\nDo not code a sidewalk that is not continuous over the entire length of the coding segment.\nMeasuring sidewalk distance is based on the sidewalk\u2019s distance from the nearest driving lane, and if there is a vertical barrier separating moving vehicles and pedestrians. This distance is measured from the edge-line of the nearest driving lane to the edge of the sidewalk, including the paved shoulder and vehicle parking (if present). \nWhat is an informal path? Informal paths include:\n\u2022 Observed or evidence of pedestrian flow along the side of the road where there is no purpose-built sidewalk; or\n\u2022 Where a sidewalk is partially blocked by vehicles or other obstructions, but where pedestrians are not forced to walk on the roadway.\nWhere pedestrians are using a separated (off-road) bicycle path or designated shared-use path, record it as both a sidewalk and a bicycle facility.",
+      "categories": [
+        {
+          "Cat ID": 5,
+          "Category": "_None_",
+          "Category_description": "Pedestrian access not possible, restricted or pedestrians are forced to walk on the roadway; no discernible sidewalk is provided, sidewalk is not usable or sufficient to cater for demand; and/or pedestrians are using road lanes, paved shoulder, motorcycle facilities or on-road bicycle facilities."
+        },
+        {
+          "Cat ID": 7,
+          "Category": "Informal path 0m to <1m",
+          "Category_description": "An informal path only, with a distance of less than 1m from the nearest driving lane (no barrier)."
+        },
+        {
+          "Cat ID": 6,
+          "Category": "Informal path \u22651m",
+          "Category_description": "An informal path only, with a distance of 1m or more from the nearest driving lane (no barrier)."
+        },
+        {
+          "Cat ID": 4,
+          "Category": "Sidewalk 0m to <1m from road",
+          "Category_description": "Sidewalk is present and free of obstruction, with a distance of less than 1m from the nearest driving lane (no barrier)."
+        },
+        {
+          "Cat ID": 3,
+          "Category": "Sidewalk 1m to <3m from road",
+          "Category_description": "Sidewalk is present and free of obstruction, with a distance of 1m to 3m from the nearest driving lane (no barrier)."
+        },
+        {
+          "Cat ID": 2,
+          "Category": "Sidewalk \u22653m from road",
+          "Category_description": "Sidewalk is present and free of obstruction, with a distance of 3m or more from the nearest driving lane (no barrier)."
+        },
+        {
+          "Cat ID": 1,
+          "Category": "Sidewalk with barrier",
+          "Category_description": "Sidewalk is present and free of obstruction, with a physical barrier separating it from the nearest driving lane. A physical barrier must be sufficient to restrain a vehicle from entering the pedestrian facility at the posted speed limit. Depending on the posted speed, this may include hedges and small shrubs, bollards, fences, walls, and safety barriers. Curbs are not considered a physical barrier."
+        }
+      ]
+    },
+    {
+      "Item": "Sidewalk - passenger-side",
+      "Col ID": "BE",
+      "Attribute description": "Please refer to <Attribute description> in Sidewalk - driver-side but for the passenger-side of the road.",
+      "categories": [
+        {
+          "Cat ID": 5,
+          "Category": "_None_",
+          "Category_description": "Pedestrian access not possible, restricted or pedestrians are forced to walk on the roadway; no discernible sidewalk is provided, sidewalk is not usable or sufficient to cater for demand; and/or pedestrians are using road lanes, paved shoulder, motorcycle facilities or on-road bicycle facilities."
+        },
+        {
+          "Cat ID": 7,
+          "Category": "Informal path 0m to <1m",
+          "Category_description": "An informal path only, with a distance of less than 1m from the nearest driving lane (no barrier)."
+        },
+        {
+          "Cat ID": 6,
+          "Category": "Informal path \u22651m",
+          "Category_description": "An informal path only, with a distance of 1m or more from the nearest driving lane (no barrier)."
+        },
+        {
+          "Cat ID": 4,
+          "Category": "Sidewalk 0m to <1m from road",
+          "Category_description": "Sidewalk is present and free of obstruction, with a distance of less than 1m from the nearest driving lane (no barrier)."
+        },
+        {
+          "Cat ID": 3,
+          "Category": "Sidewalk 1m to <3m from road",
+          "Category_description": "Sidewalk is present and free of obstruction, with a distance of 1m to 3m from the nearest driving lane (no barrier)."
+        },
+        {
+          "Cat ID": 2,
+          "Category": "Sidewalk \u22653m from road",
+          "Category_description": "Sidewalk is present and free of obstruction, with a distance of 3m or more from the nearest driving lane (no barrier)."
+        },
+        {
+          "Cat ID": 1,
+          "Category": "Sidewalk with barrier",
+          "Category_description": "Sidewalk is present and free of obstruction, with a physical barrier separating it from the nearest driving lane. A physical barrier must be sufficient to restrain a vehicle from entering the pedestrian facility at the posted speed limit. Depending on the posted speed, this may include hedges and small shrubs, bollards, fences, walls, and safety barriers. Curbs are not considered a physical barrier."
+        }
+      ]
+    },
+    {
+      "Item": "Service road",
+      "Col ID": "BF",
+      "Attribute description": "Record the presence of a service road running parallel with the main carriageway.\nIf the carriageway being coded is the service road, record the service road as being 'Not present'.\nThe purpose of a service road is to link the property accesses and minor intersections together and then join them to the main carriageway at a single point.\nFor undivided roads, record service roads which appear on either one side or both sides of the road.",
+      "categories": [
+        {
+          "Cat ID": 1,
+          "Category": "Not present",
+          "Category_description": "Service road is not present (or carriageway being coded is the service road)."
+        },
+        {
+          "Cat ID": 2,
+          "Category": "Present",
+          "Category_description": "Service road is present."
+        }
+      ]
+    },
+    {
+      "Item": "Facilities for motorised two wheelers",
+      "Col ID": "BG",
+      "Attribute description": "Record the presence of purpose-built facilities for motorcycles, mopeds and other light motorised vehicles capable of speeds of 30km/h or more.\nFor undivided roads, record motorcycle facilities which appear on either one side or both sides of the road.\nIs a service road a motorcycle facility? No. Service roads can be used by all road users. If use of a side road is restricted (by design or enforcement) to two- or three-wheeled motorised vehicles and bicycles, it should be coded as a motorcycle facility. Even where a service road is used primarily by two- and three-wheelers, only record a motorcycle facility where one of the following attributes is present.",
+      "categories": [
+        {
+          "Cat ID": 6,
+          "Category": "_None_",
+          "Category_description": "No specific provisions for motorised two- and three-wheelers."
+        },
+        {
+          "Cat ID": 5,
+          "Category": "Dedicated motorcyclist lane on roadway",
+          "Category_description": "Dedicated motorcycle lane separated from the nearest driving lane by road markings."
+        },
+        {
+          "Cat ID": 2,
+          "Category": "Segregated one-way motorcycle path without barrier",
+          "Category_description": "Motorcycle path separated from the nearest driving lane by at least a 1m wide curb or equivalent raised surface (no barrier)."
+        },
+        {
+          "Cat ID": 4,
+          "Category": "Segregated two-way motorcycle path with barrier",
+          "Category_description": "Two-way motorcycle path separated from traffic by at least a 1m wide curb or equivalent raised surface (no barrier)."
+        },
+        {
+          "Cat ID": 3,
+          "Category": "Segregated two-way motorcycle path with barrier",
+          "Category_description": "Two-way segregated motorcycle path separated by a physical barrier or located at least 10m from the nearest driving lane.\nA physical barrier must be sufficient enough to fully restrict vehicles from entering the dedicated path at the posted speed."
+        },
+        {
+          "Cat ID": 1,
+          "Category": "Segregated one-way motorcycle path with barrier",
+          "Category_description": "Segregated motorcycle path separated by a physical barrier or located at least 10m from the nearest driving lane.\nA physical barrier must be sufficient enough to fully restrict vehicles from entering the dedicated path at the posted speed."
+        }
+      ]
+    },
+    {
+      "Item": "Facilities for bicycles",
+      "Col ID": "BH",
+      "Attribute description": "Record purpose-built facilities for bicyclists.\nOnly record facilities which are specifically for bicycles (and in some cases, also for pedestrians) that are present for the whole coding segment.\nDo not code facilities which are being used by motorised or electric powered two- or three-wheeled vehicles travelling at or above 30km/h.\nFor undivided roads, code bicycle facilities which appear on either one side or both sides of the road.\nDo not code bicycle facilities that are of poor standard. This may include facilities that are:\n\u2022 Inappropriate to a high speed environment\n\u2022 Of inadequate width (for example, where a bicycle is painted onto a narrow and poorly maintained paved shoulder or the existing facility cannot cater for peak hour flows)\n\u2022 Not continuous for the entire coding segment or have localised pinch points of less than 1.2m in width, or\n\u2022 In conflict with other uses, such as merge lanes, parked vehicles or bus stops.\nBicycle facilities may be provided alongside pedestrian sidewalks. Where a bicycle facility is shared with pedestrians, code it as a shared use path.",
+      "categories": [
+        {
+          "Cat ID": 4,
+          "Category": "_None_",
+          "Category_description": "No specific provision for bicycles, or existing facilities are of poor standard."
+        },
+        {
+          "Cat ID": 6,
+          "Category": "Signed shared roadway",
+          "Category_description": "No specific provision for bicycles, but which is signed as preferred bicycle route."
+        },
+        {
+          "Cat ID": 5,
+          "Category": "Extra wide outside \u22654.2m",
+          "Category_description": "The outer most lane is equal or greater than 4.2m in width. The lane may or may not have bicycle markings or signage. Do not code the road shoulder or where traffic speeds are 50km/h or more."
+        },
+        {
+          "Cat ID": 3,
+          "Category": "Dedicated bicycle lane on roadway",
+          "Category_description": "A dedicated bicycle lane separated from traffic by lane markings on the roadway or by <1m of raised or paved surface. An on-road lane should be appropriate to the traffic speed environment; be of adequate width, well maintained surface, and have little or no conflict with other uses, such as merge lanes, parked vehicles or bus stops."
+        },
+        {
+          "Cat ID": 7,
+          "Category": "Shared use path",
+          "Category_description": "Bicycles have access to a path shared with pedestrians, which is separated from traffic by \u22651m raised or paved surface."
+        },
+        {
+          "Cat ID": 2,
+          "Category": "Segregated bicycle path",
+          "Category_description": "A dedicated bicycle path separated from traffic by \u22651m raised or paved surface."
+        },
+        {
+          "Cat ID": 1,
+          "Category": "Segregated bicycle path with barrier",
+          "Category_description": "A dedicated bicycle path separated from traffic by a physical barrier or is located \u226510m from the road.\nA physical barrier must be sufficient to restrain a vehicle from entering the bicycle facility at the posted speed limit."
+        }
+      ]
+    },
+    {
+      "Item": "Roadworks",
+      "Col ID": "BI",
+      "Attribute description": "Record the presence of major road construction or road works in progress.\nRecord any construction activities in the vicinity of the road that impacts on its normal operation, such as temporary speed limits or lane closures.",
+      "categories": [
+        {
+          "Cat ID": 3,
+          "Category": "Major road works",
+          "Category_description": "Major road works are when the road is being significantly changed and the attribute cannot be coded accurately. Star ratings will not be generated for these segments."
+        },
+        {
+          "Cat ID": 2,
+          "Category": "Minor road works",
+          "Category_description": "Minor road works are when all the attributes can be coded accurately even though there are road works.\nRoad works and temporary traffic management may affect the speed of passing traffic."
+        },
+        {
+          "Cat ID": 1,
+          "Category": "No road works",
+          "Category_description": "No construction or road works in progress."
+        }
+      ]
+    },
+    {
+      "Item": "Sight distance",
+      "Col ID": "BJ",
+      "Attribute description": "Record the ability of a driver to see and/or anticipate road conditions and other road users ahead.\nThis includes seeing pedestrians or bicyclists on the roadway or about to cross the road ahead, or other vehicles at an intersection. Horizontal and vertical alignment or physical obstructions such as roadside objects and vegetation may reduce sight distance.\nAs a general guide, sight distance is considered poor if it is:\n- Less than 50m for speeds of 70km/h or less, or\n- Less than 80m for speeds above 70km/h.",
+      "categories": [
+        {
+          "Cat ID": 2,
+          "Category": "Poor",
+          "Category_description": "Sight distance is limited or restricted."
+        },
+        {
+          "Cat ID": 1,
+          "Category": "Adequate",
+          "Category_description": "Sight distance is not limited or restricted."
+        }
+      ]
+    },
+    {
+      "Item": "School zone warning",
+      "Col ID": "BY",
+      "Attribute description": "Record the presence of a school zone.\nRecord the school zone from it start point to end point, as designated by the signs on both approaches to the school, even if this spans several coding segments.\nWhat is a school zone? School zones are areas within the vicinity of schools and other educational establishments where school children and young pedestrians are likely to be present in high numbers. School zones are likely to have reduced speed limits for certain times of the day. School zones are likely to have appropriate road signs and markings to make motorists aware of the presence of vulnerable road users such as young pedestrians and bicyclists. Parking restrictions may also apply in school zones.",
+      "categories": [
+        {
+          "Cat ID": 3,
+          "Category": "No school zone warning (school present)",
+          "Category_description": "School is present but without school zone warning signs or markings."
+        },
+        {
+          "Cat ID": 2,
+          "Category": "School zone static signs or road markings",
+          "Category_description": "A school zone is present with appropriate warning signs.\nRoad markings and speed limit signs may also be present."
+        },
+        {
+          "Cat ID": 1,
+          "Category": "School zone flashing beacons",
+          "Category_description": "A school zone is present and incorporates flashing beacons to give emphasis to the warning signs and appropriate speed limit."
+        },
+        {
+          "Cat ID": 4,
+          "Category": "Not applicable (no school at the location)",
+          "Category_description": "No school at the location."
+        }
+      ]
+    },
+    {
+      "Item": "School zone crossing supervisor",
+      "Col ID": "BZ",
+      "Attribute description": "Record the presence of a crossing supervisor or warden.\nA crossing supervisor/patrol assists children in safely crossing roads on their way to and from school. School crossing supervisors often operate during the school community's peak demand period both in the morning and in the afternoon.\nActual operating times depend on a number of factors that include school start times, pedestrian access and traffic volumes.\nIf crossing is supervised on an ad hoc or irregular basis, record as \u2018not present\u2019.\nLocal knowledge or site observations may be required.",
+      "categories": [
+        {
+          "Cat ID": 2,
+          "Category": "School zone crossing supervisor not present",
+          "Category_description": "A crossing supervisor/patrol is not present or only present on an irregular basis."
+        },
+        {
+          "Cat ID": 1,
+          "Category": "School zone crossing supervisor present at school start and finish times",
+          "Category_description": "A crossing supervisor/patrol is present. The crossing supervisor may be present throughout the school day or during periods of high pedestrian activity only, for example at school start and finish times."
+        },
+        {
+          "Cat ID": 3,
+          "Category": "Not applicable (no school at the location)",
+          "Category_description": "No school pedestrian crossing facility at the location."
+        }
+      ]
+    }
+  ]
+}
