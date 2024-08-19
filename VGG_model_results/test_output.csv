@@ -1,0 +1,42 @@
+,Accuracy,Precision,Recall,F1-Score
+Carriageway,100.0,1.0,1.0,1.0
+Upgrade cost,93.44,0.92,0.83,0.86
+Motorcycle observed flow,95.7,0.48,0.48,0.48
+Pedestrian observed flow along the road driver-side,100.0,1.0,1.0,1.0
+Pedestrian observed flow along the road passenger-side,100.0,1.0,1.0,1.0
+Land use - driver-side,100.0,1.0,1.0,1.0
+Land use - passenger-side,85.66,0.55,0.53,0.54
+Area type,95.9,1.0,1.0,1.0
+Speed limit,98.98,0.65,0.67,0.66
+Motorcycle speed limit,99.8,0.48,0.5,0.49
+Truck speed limit,99.8,0.48,0.5,0.49
+Differential speed limits,98.98,1.0,1.0,1.0
+Median type,93.24,0.67,0.7,0.68
+Roadside severity - driver-side distance,96.52,0.91,0.91,0.91
+Roadside severity - driver-side object,92.62,0.46,0.48,0.47
+Roadside severity - passenger-side distance,85.66,0.6,0.58,0.57
+Roadside severity - passenger-side object,70.7,0.82,0.8,0.8
+Shoulder rumble strips,98.98,0.48,0.5,0.49
+Paved shoulder - driver-side,97.54,0.91,0.91,0.91
+Paved shoulder - passenger-side,86.89,0.86,0.87,0.86
+Intersection type,94.26,1.0,1.0,1.0
+Intersection channelisation,100.0,1.0,1.0,1.0
+Intersecting road volume,94.26,1.0,1.0,1.0
+Intersection quality,94.06,1.0,1.0,1.0
+Property access points,93.65,0.97,0.67,0.73
+Number of lanes,94.88,0.66,0.44,0.49
+Curvature,98.98,0.5,0.48,0.49
+Quality of curve,98.98,0.5,0.48,0.49
+Skid resistance / grip,98.16,0.98,0.95,0.96
+Delineation,99.8,0.5,0.48,0.49
+Street lighting,96.11,1.0,1.0,1.0
+Pedestrian crossing facilities - inspected road,94.47,0.48,0.48,0.48
+Pedestrian crossing quality,94.67,0.48,0.48,0.48
+Pedestrian crossing facilities - intersecting road,99.39,1.0,1.0,1.0
+Speed management / traffic calming,97.95,1.0,1.0,1.0
+Pedestrian fencing,100.0,1.0,1.0,1.0
+Vehicle parking,99.39,0.48,0.5,0.49
+Sidewalk - passenger-side,91.6,0.34,0.32,0.33
+Service road,96.72,0.47,0.5,0.48
+School zone warning,96.31,0.98,0.75,0.83
+School zone crossing supervisor,96.11,0.73,0.73,0.73
