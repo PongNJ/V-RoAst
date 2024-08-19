@@ -15,10 +15,10 @@ Road traffic crashes cause millions of deaths annually and have a significant ec
 
 - **Mapillary API**: Access the documentation [here](https://www.mapillary.com/developer/api-documentation).
 
-### Step 2: V-RoAst Installation
+### Step 2: V-RoAst Installation (This will be available later)
 
 ```bash
-git clone https://github.com/xxxxxxxxx.git
+git clone https://github.com/xxxxx/V-RoAst.git
 ```
 
 ## ThaiRAP Dataset 📂
