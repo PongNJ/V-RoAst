@@ -41,4 +41,11 @@ The ThaiRAP dataset combines street images with road attributes, stored in a CSV
 │  └─Validation.csv
 │
 ```
+### ThaiRAP Location and Sample of Images in a 100-m road segment
+<img src="figure/ThaiRAP_location_and_samples.png" alt="ThaiRAP location and samples" width="500"/>
+
+### ThaiRAP Attribute Distribution
+![ThaiRAP Attribute Distribution](./figure/ThaiRAP_Attribute.png)
+
+
 
