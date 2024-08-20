@@ -53,7 +53,7 @@ The ThaiRAP dataset combines street images with road attributes, stored in a CSV
 ### Scalable Solution for Road Assessment
 Our approach, V-RoAst, shows that there is potential for using VLMs for road assessment tasks and can predict star ratings by using crowdsourced imagery
 
-![Star rating](./figure/Star_rating.png)
+<img src="./figure/Star_rating.png" alt="Star rating" width="500"/>
 
 
 
