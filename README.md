@@ -21,7 +21,7 @@ git clone https://github.com/xxxxx/V-RoAst.git
 
 ## ThaiRAP Dataset 📂
 
-Please download ThaiRAP [here](https://drive.google.com/drive/folders/1FoAoAQ3oRg0nHIBLGLx61lpmaxrI-0BI?usp=sharing) and upload all images to the ./image/ThaiRAP/ directory.
+Please download ThaiRAP dataset from [(gooel drive)](https://drive.google.com/drive/folders/1FoAoAQ3oRg0nHIBLGLx61lpmaxrI-0BI?usp=sharing) or [(ucl rdr)](https://rdr.ucl.ac.uk/articles/figure/V-RoAst_A_New_Dataset_for_Visual_Road_Assessment/26520787?file=48277894) and upload all images to the ./image/ThaiRAP/ directory.
 
 The ThaiRAP dataset combines street images with road attributes, stored in a CSV file, as shown in the structure below:
 
