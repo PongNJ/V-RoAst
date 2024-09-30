@@ -54,18 +54,6 @@ Our approach, V-RoAst, shows that there is potential for using VLMs for road ass
 <img src="./figure/Star_rating.png" alt="Star rating" width="500"/>
 
 
-To cite this work and dataset
-
-@misc{jongwiriyanurak2024vroastnewdatasetvisual,<br/>
-title={V-RoAst: A New Dataset for Visual Road Assessment},<br/>
-author={Natchapon Jongwiriyanurak and Zichao Zeng and June Moh Goo and Xinglei Wang and Ilya Ilyankou and Kerkritt Srirrongvikrai and Meihui Wang and James Haworth},<br/>
-year={2024},<br/>
-eprint={2408.10872},<br/>
-archivePrefix={arXiv},<br/>
-primaryClass={cs.CV},<br/>
-url={https://arxiv.org/abs/2408.10872},<br/>
-}
-
 
 
 
