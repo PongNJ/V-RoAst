@@ -5,14 +5,14 @@
 If you use this dataset or refer to our work, please cite:
 
 ```bibtex
-@misc{jongwiriyanurak2024vroastnewdatasetvisual,
-  title={V-RoAst: A New Dataset for Visual Road Assessment},
-  author={Natchapon Jongwiriyanurak and Zichao Zeng and June Moh Goo and Xinglei Wang and Ilya Ilyankou and Kerkritt Srirrongvikrai and Meihui Wang and James Haworth},
-  year={2024},
-  eprint={2408.10872},
-  archivePrefix={arXiv},
-  primaryClass={cs.CV},
-  url={https://arxiv.org/abs/2408.10872},
+@misc{jongwiriyanurak2025vroastvisualroadassessment,
+      title={V-RoAst: Visual Road Assessment. Can VLM be a Road Safety Assessor Using the iRAP Standard?}, 
+      author={Natchapon Jongwiriyanurak and Zichao Zeng and June Moh Goo and James Haworth and Xinglei Wang and Kerkritt Sriroongvikrai and Nicola Christie and Ilya Ilyankou and Meihui Wang and Huanfa Chen},
+      year={2025},
+      eprint={2408.10872},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV},
+      url={https://arxiv.org/abs/2408.10872}, 
 }
 ```
 
