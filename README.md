@@ -1,26 +1,28 @@
-# V-RoAst: Visual Road Assessment with Vision–Language Models (VLMs)
+# V-RoAst: Visual Road Assessment. Can VLM be a Road Safety Assessor Using the iRAP Standard?
+[![ICCVW 2025 – CV4DC (Accepted)](https://img.shields.io/badge/ICCVW%202025-CV4DC%20Accepted-brightgreen)](https://cv4dc.github.io/2025/)
+[![arXiv](https://img.shields.io/badge/arXiv-2408.10872-b31b1b)](https://arxiv.org/abs/2408.10872)
+---
 
-> Can VLMs act as iRAP road safety assessors in a zero-shot setting?
-
-[arXiv](https://arxiv.org/abs/2408.10872) • ThaiRAP dataset (images + labels) • Zero-shot VQA pipeline • CNN baselines (VGG/ResNet)
+## 🚨News 
+- **2025-07-23** – Accepted to **ICCV Workshops 2025 (CV4DC, Honolulu, Oct 19–23)**. Camera-ready coming soon.
 
 ---
 
 ## Overview
-Road safety assessments are costly and data-hungry, especially in LMICs. V-RoAst is a zero-shot Visual Question Answering framework that uses general-purpose Vision–Language Models (e.g., Gemini-1.5-Flash, GPT-4o-mini) to classify 52 iRAP attributes from street-level imagery. We release:
-- An open ThaiRAP dataset (2,037 images, 519 segments) with expert-coded iRAP labels.
-- Prompt templates and code to query VLMs for attribute classification.
-- CNN baselines (VGG/ResNet) for comparison.
+Road safety assessments are costly and data-hungry, especially in LMICs. **V-RoAst** is a zero-shot Visual Question Answering framework that uses general-purpose VLMs (e.g., Gemini-1.5-Flash, GPT-4o-mini) to classify **52 iRAP attributes** from street-level imagery.
+
+We provide:
+- **ThaiRAP dataset**: 2,037 images (519 segments) with expert-coded iRAP labels.
+- **Prompt templates & code** for attribute classification with VLMs.
+- **CNN baselines** (VGG/ResNet) for comparison.
 
 ## Key Contributions
-- **Open VLM Benchmark** for iRAP-style attributes.
-- **Prompt engineering framework** (system + user prompts with local context).
-- **Zero-shot performance analysis**, incl. unseen classes.
+- **Open VLM benchmark** for iRAP-style road safety attributes.  
+- **Prompt engineering framework** (system/user prompts + local context).  
+- **Zero-shot evaluation**, incl. unseen classes.  
 - **Automatic star-rating demo** using crowdsourced Mapillary imagery.
 
 ---
-
-
 
 ## Abstract
 Road safety assessments are critical yet costly, especially in Low- and Middle-Income Countries (LMICs), where most roads remain unrated. Traditional methods require expert annotation and training data, while supervised learning-based approaches struggle to generalise across regions. In this paper, we introduce V-RoAst, a zero-shot Visual Question Answering (VQA) framework using VisionLanguage Models (VLMs) to classify road safety attributes defined by the iRAP standard. We introduce the first opensource dataset from ThaiRAP, consisting of over 2,000 curated street-level images from Thailand annotated for this task. We evaluate Gemini-1.5-flash and GPT-4o-mini on this dataset and benchmark their performance against VGGNet and ResNet baselines. While VLMs underperform on spatial awareness, they generalise well to unseen classes and offer flexible prompt-based reasoning without retraining. Our results show that VLMs can serve as automatic road assessment tools when integrated with complementary data. This work is the first to explore VLMs for zero-shot infrastructure risk assessment and opens new directions for automatic, low-cost road safety mapping. Code and dataset:https://github.com/PongNJ/V-RoAst.
@@ -71,7 +73,6 @@ The ThaiRAP dataset combines street images with road attributes, stored in a CSV
 ![Framework of V-RoAst for visual road assessment](figure/V-RoAst_framework.png)
 
 ![ext Prompts from Framework of V-RoAst](figure/text_promt.png)
-
 
 
 ## Citation
