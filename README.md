@@ -4,7 +4,7 @@
 ---
 
 ## 🚨News 
-- **2025-07-23** – Accepted to **ICCV Workshops 2025 (CV4DC, Honolulu, Oct 19–23)**. Camera-ready coming soon.
+- **2025-07-23** – Accepted to **ICCV Workshops 2025 (CV4DC, Honolulu, Oct 19–23)**
 
 ---
 
@@ -80,14 +80,14 @@ The ThaiRAP dataset combines street images with road attributes, stored in a CSV
 If you use this dataset or refer to our work, please cite:
 
 ```bibtex
-@misc{jongwiriyanurak2025vroastvisualroadassessment,
-      title={V-RoAst: Visual Road Assessment. Can VLM be a Road Safety Assessor Using the iRAP Standard?}, 
-      author={Natchapon Jongwiriyanurak and Zichao Zeng and June Moh Goo and Xinglei Wang and Ilya Ilyankou and Kerkritt Sriroongvikrai and Nicola Christie and Meihui Wang and Huanfa Chen and James Haworth},
-      year={2025},
-      eprint={2408.10872},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV},
-      url={https://arxiv.org/abs/2408.10872}, 
+@InProceedings{Jongwiriyanurak_2025_ICCV,
+    author    = {Jongwiriyanurak, Natchapon and Zeng, Zichao and Goo, June Moh and Wang, Xinglei and Ilyankou, Ilya and Sriroongvikrai, Kerkritt and Christie, Nicola and Wang, Meihui and Chen, Huanfa and Haworth, James},
+    title     = {V-RoAst: Visual Road Assessment. Can VLM be a Road Safety Assessor Using the iRAP Standard?},
+    booktitle = {Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV) Workshops},
+    month     = {October},
+    year      = {2025},
+    pages     = {1658-1667}
+}
 }
 ```
 
