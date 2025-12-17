@@ -1,6 +1,5 @@
 # V-RoAst: Visual Road Assessment. Can VLM be a Road Safety Assessor Using the iRAP Standard?
 [![ICCVW 2025 – CV4DC (Accepted)](https://img.shields.io/badge/ICCVW%202025-CV4DC%20Accepted-brightgreen)](https://openaccess.thecvf.com/content/ICCV2025W/CV4DC/html/Jongwiriyanurak_V-RoAst_Visual_Road_Assessment._Can_VLM_be_a_Road_Safety_ICCVW_2025_paper.html)
-[![arXiv](https://img.shields.io/badge/arXiv-2408.10872-b31b1b)](https://arxiv.org/abs/2408.10872)
 ---
 
 ## 🚨News 
